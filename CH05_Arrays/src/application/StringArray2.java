@@ -3,7 +3,7 @@ package application;
 public class StringArray2 {
 
 	public static void main(String[] args) {
-		// 문자열은 참조 자료형, 참조 변수(reference variable)은 주소값을 가진다.
+		// 문자열은 참조 자료형, 참조 변수(reference variable)는 주소값을 가진다.
 		String text = null; // null값은 주소값이 없다는 것, 참고로 int x =null;같이 기본 자료형에는 널값을 입력불가
 		// String text - 참조변수
 //		text = new String("헬로우");
