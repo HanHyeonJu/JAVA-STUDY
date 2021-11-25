@@ -7,8 +7,6 @@ public class Hangman {
 	private boolean running = true; // 게임을 계속 진행?
 	private  RandomWord word =new RandomWord();
 	private Scanner scanner = new Scanner(System.in);
-	private int remainTries = 7; // 시도횟수
-	private char lastGuess; // 유저입력문자
 	
 	// 프로그램을 실행하는 런 메소드 
 	public void run() {
