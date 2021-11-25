@@ -7,6 +7,8 @@ public class Hangman {
 	private boolean running = true; // 게임을 계속 진행?
 	private  RandomWord word =new RandomWord();
 	private Scanner scanner = new Scanner(System.in);
+	private int remainTries = 7; // 시도횟수
+	private char lastGuess; // 유저입력문자
 	
 	// 프로그램을 실행하는 런 메소드 
 	public void run() {
@@ -33,6 +35,7 @@ public class Hangman {
 		String guess = scanner.nextLine(); // 입력받은 문자열을 guess에 저장
 		// 단어에서 입력받은 문자가 있는지 확인해서 처리한다.(단어는 RandomWord 객체 word를 사용)
 		word.addGuess(guess.charAt(0)); //첫번째 문자를 입력
+		
 	}
 
 	private void checkUserInput() {

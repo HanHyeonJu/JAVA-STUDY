@@ -55,8 +55,10 @@ public class RandomWord {
 		for(int i = 0; i < selectword.length(); i++ ) { //단어 길이만큼 반복
 			if(c == selectword.charAt(i)) {
 				characters[i] = c; //여기까지 하면 현재 단어를 다 맞추더라도 종료되지 않는다, 체크 대신 단어가 맞으면 종료하는 코드 필요
+				
 			}
 		}
+				
 	}
 
 	public boolean isCompleted() {
