@@ -4,7 +4,6 @@ public class App {
 
 	public static void main(String[] args) {
 		// 인스턴스 변수의 값이 없을 때 자동으로 0, null 초기화됨
-		//그럼 인스턴스 변수에 바로 값 넣어도 상관없는거임?
 		
 		Person p1 = new Person();
 		
