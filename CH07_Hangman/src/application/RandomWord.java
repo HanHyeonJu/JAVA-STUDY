@@ -59,6 +59,16 @@ public class RandomWord {
 		}
 	}
 
+	public boolean isCompleted() {
+		// 철자를 다 맞췄는지 체크해서 true or false로 리턴
+		for(char c : characters) {
+			if(c=='\u0000') {
+				return false; //아직 맞춰야할 문자가 있음
+			}
+		}
+		return true; // 다 맞췄음
+	}
+
 
 }
 
