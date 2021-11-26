@@ -2,7 +2,18 @@ package application;
 
 class Person{// 하나의 파일에 여러개의 클래스를 만들수 있다.
 	String name; // 인스턴스 변수 : 클래스만 가지고 사용할 수 있음 , 객체가 생성되어야 사용 가능
+
+	@Override
+	public String toString() {
+		return "Person [name=" + name + "]";
+	} // 요렇게 하면 주소 안의 리턴된 값이 나옴
+	
 }
+//public String toString() {
+//	String name;
+//} //요렇게 하면 주소만 나옴
+
+
 
 public class ClassObject {// public class는 한 파일에 하나만 생성가능, 파일이름과 같음
 						  // 프로그램이 실행되는 main method가 있는 클래스
@@ -15,6 +26,7 @@ public class ClassObject {// public class는 한 파일에 하나만 생성가능, 파일이름�
 		
 		Person p1; // 참조변수(String 변수이기 때문에) 펄슨 클래스 타입 p1 선언, 초기값 없음, 클래스는 초기값을 넣지 않아도 문자열형이면 null, 정수형이면 0 으로 초기화된다.	
 		p1 = new Person(); // person의 실제 객체를 생성하여 그 주소값을 p1에 대입
+		System.out.println(p1.toString());
 		System.out.println(p1);
 		p1.name = "펭수";
 		
