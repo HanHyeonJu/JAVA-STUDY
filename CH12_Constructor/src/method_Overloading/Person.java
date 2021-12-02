@@ -8,7 +8,7 @@ public class Person {
 	}
 	
 	public void greet(String name) {
-		System.out.println("Çï·ç¿À! "+name);
+		System.out.println("Çï·ç¿ì! "+name);
 	}
 	
 	public void greet(int height) {
