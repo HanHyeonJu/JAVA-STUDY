@@ -3,7 +3,7 @@ package timer_Example;
 import java.util.Timer;
 import java.util.TimerTask;
 
-class Task extends TimerTask{
+class Task extends TimerTask{ // 추상클래스를 상속받음
 
 	@Override
 	public void run() {
