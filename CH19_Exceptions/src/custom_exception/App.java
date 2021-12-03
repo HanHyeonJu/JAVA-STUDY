@@ -1,12 +1,13 @@
 package custom_exception;
 
 
+
 import custom_exception.exceptions.TempTooHighException;
 import custom_exception.exceptions.TempTooRowException;
 
 public class App {
 
-	public static void main(String[] args) throws Exception {
+	public static void main(String[] args) {
 		Thermostat stat = new Thermostat();
 		
 		try {
@@ -14,9 +15,9 @@ public class App {
 		} catch (TempTooHighException e) {
 			// 온도가 높을 때
 			System.out.println(e.getMessage()); 
-		}catch(TempTooRowException e) {
+		} catch (TempTooRowException e) {
 			// 온도가 낮을 때
-			System.out.println(e.getMessage()); 
+			System.out.println(e.getMessage());
 		}
 		
 	}
