@@ -6,10 +6,10 @@ public enum Fruit { // 키워드에 따라 class가 되고 enum이 된다.
 	private String color;
 	
 	Fruit(String color) { // enum의 생성자
-		this.color = color; // (="@@색")
+		this.color = color; 
 	}
 	
 	public String toString() {
-		return super.toString().toLowerCase()+"("+color+")"; // super는 enum의 toString을 실행? super가 enum Fruit를 의미하나?, tolowerCase()는 소문자로 출력시킴
+		return super.toString().toLowerCase()+"("+color+")"; 
 	}
 }
