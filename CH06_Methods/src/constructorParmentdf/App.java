@@ -3,20 +3,20 @@ package constructorParmentdf;
 public class App {
 
 	public static void main(String[] args) {
-		// »ı¼ºÀÚ : Å¬·¡½ºÀÇ Æ¯º°ÇÑ ¸Ş¼Òµå·Î °´Ã¼¸¦ »ı¼º
+		// ìƒì„±ì : í´ë˜ìŠ¤ì˜ íŠ¹ë³„í•œ ë©”ì†Œë“œë¡œ ê°ì²´ë¥¼ ìƒì„±
 		Person p1 =new Person();
-		p1.setName("Æë¼ö");
+		p1.setName("í­ìˆ˜");
 		p1.setHeight(120.0);
 		Person p2 =new Person();
-		p2.setName("±æµ¿");
+		p2.setName("ê¸¸ë™");
 		p2.setHeight(172.5);
 		Person p3 =new Person();
-//		p3.setName("¶óÀÌ¾ğ");
+//		p3.setName("ë¼ì´ì–¸");
 //		p3.setHeight(165.5);
 		
-		System.out.printf("ÀÌ¸§ : %s, Å° : %.1f \n", p1.getName(), p1.getHeight());
-		System.out.printf("ÀÌ¸§ : %s, Å° : %.1f \n", p2.getName(), p2.getHeight());
-		System.out.printf("ÀÌ¸§ : %s, Å° : %.1f \n", p3.getName(), p3.getHeight());
+		System.out.printf("ì´ë¦„ : %s, í‚¤ : %.1f \n", p1.getName(), p1.getHeight());
+		System.out.printf("ì´ë¦„ : %s, í‚¤ : %.1f \n", p2.getName(), p2.getHeight());
+		System.out.printf("ì´ë¦„ : %s, í‚¤ : %.1f \n", p3.getName(), p3.getHeight());
 
 	}
 

@@ -8,9 +8,9 @@ public class App {
 		try {
 			stat.setTemperature(36);
 		} catch (Exception e) {
-			// ¿Âµµ ¿¹¿Ü ¹ß»ý
+			// ì˜¨ë„ ì˜ˆì™¸ ë°œìƒ
 			//e.printStackTrace();
-			System.out.println(e.getMessage()); // throw new ExceptionÀ» ¹Þ¾Æ¼­ Ãâ·Â -> ¿À·ù°¡ »ý±âÁö ¾Ê°í ¿¹¿Ü »ý¼º
+			System.out.println(e.getMessage()); // throw new Exceptionì„ ë°›ì•„ì„œ ì¶œë ¥ -> ì˜¤ë¥˜ê°€ ìƒê¸°ì§€ ì•Šê³  ì˜ˆì™¸ ìƒì„±
 		}
 		
 	}

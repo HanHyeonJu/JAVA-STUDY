@@ -1,14 +1,14 @@
 package throwing_runtime_exception;
 
 public class Thermostat {
-	// runtime ¿¹¿Ü´Â ¿¹¿ÜÃ³¸®¸¦ ÇÏÁö ¾Ê¾Æµµ µÈ´Ù.
-	// runtimeÀº ¹®¹ı»óÀÇ ¿¡·¯´Â ¾÷Áö¸¸ ½ÇÇà Áß¿¡´Â ¿¡·¯°¡ ¹ß»ıÇÔ
-	public void setTemperature(double temperature){ // if¹®À¸·Î ¿Âµµ¸¦ ÀÔ·Â¹Ş¾Æ¼­ ¿Âµµ°¡ 0µµ ¹Ì¸¸ ¶Ç´Â 35µµ ÃÊ°úÀÎ °æ¿ì ¿¹¿Ü°¡ ¹ß»ıÇÏ´Â ¸Ş¼­µå
+	// runtime ì˜ˆì™¸ëŠ” ì˜ˆì™¸ì²˜ë¦¬ë¥¼ í•˜ì§€ ì•Šì•„ë„ ëœë‹¤.
+	// runtimeì€ ë¬¸ë²•ìƒì˜ ì—ëŸ¬ëŠ” ì—…ì§€ë§Œ ì‹¤í–‰ ì¤‘ì—ëŠ” ì—ëŸ¬ê°€ ë°œìƒí•¨
+	public void setTemperature(double temperature){ // ifë¬¸ìœ¼ë¡œ ì˜¨ë„ë¥¼ ì…ë ¥ë°›ì•„ì„œ ì˜¨ë„ê°€ 0ë„ ë¯¸ë§Œ ë˜ëŠ” 35ë„ ì´ˆê³¼ì¸ ê²½ìš° ì˜ˆì™¸ê°€ ë°œìƒí•˜ëŠ” ë©”ì„œë“œ
 		
 		if(temperature < 0 || temperature > 35) {
-			throw new RuntimeException("¿Âµµ°¡ ºñÁ¤»ó ÀÔ´Ï´Ù."); // »õ ¿¹¿Ü¸¦ »ı¼º
+			throw new RuntimeException("ì˜¨ë„ê°€ ë¹„ì •ìƒ ì…ë‹ˆë‹¤."); // ìƒˆ ì˜ˆì™¸ë¥¼ ìƒì„±
 		}
 		
-		System.out.println("¿Âµµ ¼¼ÆÃ : " + temperature);
+		System.out.println("ì˜¨ë„ ì„¸íŒ… : " + temperature);
 	}
 }

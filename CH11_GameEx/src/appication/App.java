@@ -1,14 +1,14 @@
 package appication;
 
-import game.Game; // Å¬·¡½º ºÒ·¯¿À±â : ctrl + space or ctrl + shift + o (¿©·¯°³ ÇÑ°Å¹ø¿¡)
+import game.Game; // í´ë˜ìŠ¤ ë¶ˆëŸ¬ì˜¤ê¸° : ctrl + space or ctrl + shift + o (ì—¬ëŸ¬ê°œ í•œê±°ë²ˆì—)
 
 public class App {
 
 	public static void main(String[] args) {
-		// ¿©±âºÎÅÍ ÇÁ·Î±×·¥ ½ÃÀÛ
+		// ì—¬ê¸°ë¶€í„° í”„ë¡œê·¸ë¨ ì‹œì‘
 //		Game game = new Game();
 //		game.run();
-		new Game().run(); // ±×³É ´º°ÔÀÓ °´Ã¼¿¡ ·±À» ½ÇÇà½ÃÅ°±â¸¸ ÇÒ °Å¶ó¼­ ÀÌ·¸°Ô °£´ÜÇÏ°Ô ÀÛ¼ºÇØµµ µÊ, ´ë½Å ÁÖ¼Ò¸¦ ¾ËÁö ¸øÇÔ
+		new Game().run(); // ê·¸ëƒ¥ ë‰´ê²Œì„ ê°ì²´ì— ëŸ°ì„ ì‹¤í–‰ì‹œí‚¤ê¸°ë§Œ í•  ê±°ë¼ì„œ ì´ë ‡ê²Œ ê°„ë‹¨í•˜ê²Œ ì‘ì„±í•´ë„ ë¨, ëŒ€ì‹  ì£¼ì†Œë¥¼ ì•Œì§€ ëª»í•¨
 	}
 
 }

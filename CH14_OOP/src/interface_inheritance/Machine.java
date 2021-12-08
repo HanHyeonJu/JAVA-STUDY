@@ -3,13 +3,13 @@ package interface_inheritance;
 public class Machine implements DefaultRunnable {
 
 	@Override
-	public void run() { // runÀº runnable ÀÎÅÍÆäÀÌ½ºÀÇ Ãß»ó¸Ş¼Òµå
-		System.out.println("¸Ó½Å ·¯´×!");
+	public void run() { // runì€ runnable ì¸í„°í˜ì´ìŠ¤ì˜ ì¶”ìƒë©”ì†Œë“œ
+		System.out.println("ë¨¸ì‹  ëŸ¬ë‹!");
 	}
 
 //	@Override
 //	public void displayDetails() {
-//		System.out.println("Ç¥½ÃÇÒ µğÅ×ÀÏ¾øÀ½");
+//		System.out.println("í‘œì‹œí•  ë””í…Œì¼ì—†ìŒ");
 //	}
 //	
 }

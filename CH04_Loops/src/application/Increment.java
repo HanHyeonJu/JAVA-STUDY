@@ -3,11 +3,11 @@ package application;
 public class Increment {
 
 	public static void main(String[] args) {
-		// Á¤¼ö °ªÀ» 1¾¿ Áõ°¡ 1¾¿ °¨¼Ò => ¹İº¹¹® [Áõ°¡°¨¼Ò¿¬»êÀÚ]
+		// ì •ìˆ˜ ê°’ì„ 1ì”© ì¦ê°€ 1ì”© ê°ì†Œ => ë°˜ë³µë¬¸ [ì¦ê°€ê°ì†Œì—°ì‚°ì]
 		
 		int count = 0;
 		
-		// 1¾¿ Áõ°¡		
+		// 1ì”© ì¦ê°€		
 		count = count + 1;
 		System.out.println(count);
 		count += 1;
@@ -17,7 +17,7 @@ public class Increment {
 		++count;
 		System.out.println(count);
 		
-		// À§¿Í°°ÀÌ 4°¡Áö ¹æ¹ıÀ¸·Î 1¾¿ °¨¼Ò ½ÃÄÑ¶ó.
+		// ìœ„ì™€ê°™ì´ 4ê°€ì§€ ë°©ë²•ìœ¼ë¡œ 1ì”© ê°ì†Œ ì‹œì¼œë¼.
 		
 		count = count - 1;
 		System.out.println(count);

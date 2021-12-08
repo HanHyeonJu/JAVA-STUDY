@@ -1,10 +1,10 @@
 package interfaces;
-// ÀÎÅÍÆäÀÌ½º¸¦ ±¸Çö(»ó¼Ó)ÇÒ ´ë implements »ç¿ë, »ó¼ÓÇÑ Å¬·¡½º¿¡¼­ Ãß»ó¸Ş¼Òµå ¿Ï¼º(±¸Çö)
+// ì¸í„°í˜ì´ìŠ¤ë¥¼ êµ¬í˜„(ìƒì†)í•  ëŒ€ implements ì‚¬ìš©, ìƒì†í•œ í´ë˜ìŠ¤ì—ì„œ ì¶”ìƒë©”ì†Œë“œ ì™„ì„±(êµ¬í˜„)
 public class Person implements Describable{
 
 	@Override
 	public String getDescription() {
-		return "»ç¶÷ ÀÔ´Ï´Ù.";
+		return "ì‚¬ëŒ ì…ë‹ˆë‹¤.";
 	}
 
 }

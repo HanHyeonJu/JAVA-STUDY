@@ -1,11 +1,11 @@
 package polymorphism;
 
-public class Cat { // °í¾çÀÌ ¸Ş¼Òµå¿Í »ç³É ¸Ş¼Òµå , Cat Å¬·¡½ºµµ Object Å¬·¡½º¿¡ »ó¼Ó¹ŞÀ½ extends Object°¡ »ı·«µÇ¾î ÀÖ´Â°ÅÀÓ
+public class Cat { // ê³ ì–‘ì´ ë©”ì†Œë“œì™€ ì‚¬ëƒ¥ ë©”ì†Œë“œ , Cat í´ë˜ìŠ¤ë„ Object í´ë˜ìŠ¤ì— ìƒì†ë°›ìŒ extends Objectê°€ ìƒëµë˜ì–´ ìˆëŠ”ê±°ì„
 	
 	public void vocal() {
-		System.out.println("¾ß¿Ë~");
+		System.out.println("ì•¼ì˜¹~");
 	}
 	public void hunt() {
-		System.out.println("»ç³ÉÁß~");
+		System.out.println("ì‚¬ëƒ¥ì¤‘~");
 	}
 }

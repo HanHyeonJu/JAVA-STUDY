@@ -5,10 +5,10 @@ import java.util.Scanner;
 public class CheckPassword {
 
 	public static void main(String[] args) {
-		// ÁöÁ¤µÈ ÆĞ½º¿öµå ÀÔ·Â½Ã 'Á¢¼Û½ÂÀÎ' ¾Æ´Ï¸é 'Á¢¼ÓºÒ°¡'
+		// ì§€ì •ëœ íŒ¨ìŠ¤ì›Œë“œ ì…ë ¥ì‹œ 'ì ‘ì†¡ìŠ¹ì¸' ì•„ë‹ˆë©´ 'ì ‘ì†ë¶ˆê°€'
 		
 		final String USER_PASSWORD = "hello";
-		System.out.println("ºñ¹øÀ» ÀÔ·Â > ");
+		System.out.println("ë¹„ë²ˆì„ ì…ë ¥ > ");
 
 		Scanner scanner =new Scanner(System.in); 
 		
@@ -16,10 +16,10 @@ public class CheckPassword {
 		scanner.close();
 		
 		if(password.equals(USER_PASSWORD)){
-			System.out.println("Á¢¼Û ½ÂÀÎ.");
+			System.out.println("ì ‘ì†¡ ìŠ¹ì¸.");
 		}
 		else {
-			System.out.println("Á¢¼Ó ºÒ°¡.");
+			System.out.println("ì ‘ì† ë¶ˆê°€.");
 		}
 
 	}

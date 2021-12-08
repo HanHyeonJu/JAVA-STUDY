@@ -4,37 +4,37 @@ import java.util.Scanner;
 
 public class App {
 
-	private static Scanner scanner=new Scanner(System.in); // static ¸Ş¼­µå¿¡¼­ »ç¿ë ÇÒ °ÍÀÌ±â ¶§¹®¿¡ static ºÙ¿©ÁÜ
+	private static Scanner scanner=new Scanner(System.in); // static ë©”ì„œë“œì—ì„œ ì‚¬ìš© í•  ê²ƒì´ê¸° ë•Œë¬¸ì— static ë¶™ì—¬ì¤Œ
 
 	public static void main(String[] args) {
 		
-		int number = getNumber(); // ¸Ş¼­µå¸¦ ÀÌ¿ëÇØ¼­ ÀÔ·Â¹Ş±â
-		System.out.println("ÀÔ·ÂÇÑ ¼ıÀÚ´Â : "+ number);
-		scanner.close(); // ½ºÄ³³Ê Á¾·á
+		int number = getNumber(); // ë©”ì„œë“œë¥¼ ì´ìš©í•´ì„œ ì…ë ¥ë°›ê¸°
+		System.out.println("ì…ë ¥í•œ ìˆ«ìëŠ” : "+ number);
+		scanner.close(); // ìŠ¤ìºë„ˆ ì¢…ë£Œ
 		
 
 	}
 	
-	private static int getNumber() {// ¼ıÀÚ¸¦ ÀÔ·Â¹Ş¾Æ¼­ ¸®ÅÏÇìÁÖ±â À§ÇÑ ¸Ş¼­µå
+	private static int getNumber() {// ìˆ«ìë¥¼ ì…ë ¥ë°›ì•„ì„œ ë¦¬í„´í—¤ì£¼ê¸° ìœ„í•œ ë©”ì„œë“œ
 		int number = 0;
 		boolean isNumber= false;
 		
-		// ¼ıÀÚ¸¦ ÀÔ·ÂÇÒ¶§±îÁö ¹İº¹ do while¹® »ç¿ë
+		// ìˆ«ìë¥¼ ì…ë ¥í• ë•Œê¹Œì§€ ë°˜ë³µ do whileë¬¸ ì‚¬ìš©
 		do {
-			System.out.print("¼ıÀÚ¸¦ ÀÔ·Â : ");
+			System.out.print("ìˆ«ìë¥¼ ì…ë ¥ : ");
 			String line = scanner.nextLine();	
 			
-			// ¿¹¿Ü¸¦ Ã³¸®ÇÏ´Â try-catch¹®
+			// ì˜ˆì™¸ë¥¼ ì²˜ë¦¬í•˜ëŠ” try-catchë¬¸
 			try {
 				number = Integer.parseInt(line); 
 				isNumber = true;
 			} catch (NumberFormatException e) {
-				System.out.println("Á¤¼ö¸¦ º¯È¯ÇÒ ¼ö ¾ø½À´Ï´Ù.");
+				System.out.println("ì •ìˆ˜ë¥¼ ë³€í™˜í•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤.");
 			}
 			
-		}while(!isNumber); //inNumber°¡ true¸é Á¾·á
+		}while(!isNumber); //inNumberê°€ trueë©´ ì¢…ë£Œ
 		
-		return number; // ¼ıÀÚ¸¦ ÀÔ·Â¹Ş¾Æ ¸®ÅÏÇØÁÜ
+		return number; // ìˆ«ìë¥¼ ì…ë ¥ë°›ì•„ ë¦¬í„´í•´ì¤Œ
 
 }
 

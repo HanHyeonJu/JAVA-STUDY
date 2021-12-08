@@ -3,13 +3,13 @@ package abstract_Class;
 public class App {
 
 	public static void main(String[] args) {
-		//Ãß»ó Å¬·¡½º
-		//GameObject obj = new GameObject(); °´Ã¼¸¦ ¸¸µé ¼ö ¾ø´Ù.
+		//ì¶”ìƒ í´ë˜ìŠ¤
+		//GameObject obj = new GameObject(); ê°ì²´ë¥¼ ë§Œë“¤ ìˆ˜ ì—†ë‹¤.
 		GameObject[] objs = { new Player(), new Monster() };
 		
 		for(GameObject ob : objs) {
 			System.out.println(ob);
-			ob.describe(); // ±¸ÇöµÈ Ãß»ó ¸Ş¼Òµå
+			ob.describe(); // êµ¬í˜„ëœ ì¶”ìƒ ë©”ì†Œë“œ
 		}
 	}
 

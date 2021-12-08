@@ -3,18 +3,18 @@ package application;
 public class Boolean {
 
 	public static void main(String[] args) {
-		// ºí¸° Å¸ÀÔÀº Âü, °ÅÁş(true, false)
+		// ë¸”ë¦° íƒ€ì…ì€ ì°¸, ê±°ì§“(true, false)
 		boolean c1 = false;
-		System.out.println("Á¶°Ç1: "+c1);
+		System.out.println("ì¡°ê±´1: "+c1);
 		
-		// ºñ±³ °á°ú°¡ Âü, °ÅÁş
-		boolean c2 = 4 < 5; // 4 < 5°¡ Á¶°ÇÀÓ
-		System.out.println("Á¶°Ç2: "+c2);
+		// ë¹„êµ ê²°ê³¼ê°€ ì°¸, ê±°ì§“
+		boolean c2 = 4 < 5; // 4 < 5ê°€ ì¡°ê±´ì„
+		System.out.println("ì¡°ê±´2: "+c2);
 		
-		//	ºñ±³ == °°À» ¶§ Âü, ¾Æ´Ï¸é °ÅÁş, != °°Áö ¾ÊÀ» ¶§ Âü, ¾Æ´Ï¸é °ÅÁş	
+		//	ë¹„êµ == ê°™ì„ ë•Œ ì°¸, ì•„ë‹ˆë©´ ê±°ì§“, != ê°™ì§€ ì•Šì„ ë•Œ ì°¸, ì•„ë‹ˆë©´ ê±°ì§“	
 		boolean c3 = 4 != 5;
-		System.out.println("Á¶°Ç3: "+c3);
-		System.out.printf("Á¶°Ç3: %b", c3); //ºÒ¸°Àº %b·Î printf¿¡ »ç¿ë
+		System.out.println("ì¡°ê±´3: "+c3);
+		System.out.printf("ì¡°ê±´3: %b", c3); //ë¶ˆë¦°ì€ %bë¡œ printfì— ì‚¬ìš©
 
 	}
 

@@ -13,13 +13,13 @@ import javax.swing.JToolBar;
 //	private Mainpanel mainPanel;
 //	private Color color;
 //	public ColorButtonListener(Mainpanel mainPanel, Color color) {
-//		this.mainPanel = mainPanel; // º¯¼ö mainPanelÀº ÀÎ½ºÅÏ½º º¯¼ö mainPanelÀÌ´Ù(?)
+//		this.mainPanel = mainPanel; // ë³€ìˆ˜ mainPanelì€ ì¸ìŠ¤í„´ìŠ¤ ë³€ìˆ˜ mainPanelì´ë‹¤(?)
 //		this.color = color;
-//	}// ¹öÆ°¿¡ ¸ŞÀÎÆĞ³ÎÀÇ ÁÖ¼Ò¸¦ ³Ö¾îÁÜ
+//	}// ë²„íŠ¼ì— ë©”ì¸íŒ¨ë„ì˜ ì£¼ì†Œë¥¼ ë„£ì–´ì¤Œ
 //	
-//	@Override // ¿ä°Å´Â Áö¿öµµ ±¦ÂúÀ½
+//	@Override // ìš”ê±°ëŠ” ì§€ì›Œë„ ê´œì°®ìŒ
 //	public void actionPerformed(ActionEvent e) {
-////		System.out.println("»¡°£»ö ¹öÆ° Å¬¸¯!");
+////		System.out.println("ë¹¨ê°„ìƒ‰ ë²„íŠ¼ í´ë¦­!");
 //		mainPanel.setBackground(color);
 //	}	
 //}
@@ -29,9 +29,9 @@ import javax.swing.JToolBar;
 ////	public BlueButtonListener(Mainpanel mainPanel) {
 ////		this.mainPanel = mainPanel;
 ////	} 
-////	@Override // ¿ä°Å´Â Áö¿öµµ ±¦ÂúÀ½
+////	@Override // ìš”ê±°ëŠ” ì§€ì›Œë„ ê´œì°®ìŒ
 ////	public void actionPerformed(ActionEvent e) {
-//////		System.out.println("ÆÄ¶õ»ö ¹öÆ° Å¬¸¯!");
+//////		System.out.println("íŒŒë€ìƒ‰ ë²„íŠ¼ í´ë¦­!");
 ////		mainPanel.setBackground(Color.BLUE);
 ////	}	
 ////}
@@ -39,20 +39,20 @@ public class Toolbar extends JToolBar{
 	private static final long serialVersionUID = 1L;
 	
 	public Toolbar(Mainpanel mainPanel) {
-		final JButton redButton = new JButton("RED"); // º¯¼ö¸¦ »ı¼º, ¹öÆ°¿¡ ¹«¾ğ°¡¸¦ Ãß°¡ÇÏ°í ½ÍÀ» ¶§ »ç¿ë
+		final JButton redButton = new JButton("RED"); // ë³€ìˆ˜ë¥¼ ìƒì„±, ë²„íŠ¼ì— ë¬´ì–¸ê°€ë¥¼ ì¶”ê°€í•˜ê³  ì‹¶ì„ ë•Œ ì‚¬ìš©
 		final JButton blueButton = new JButton("BLUE");
 	
-		//¹öÆ°¿¡ ÀÌº¥Æ®¸¦ ¿¬°á('Å¬¸¯' ÀÌº¥Æ®)	
+		//ë²„íŠ¼ì— ì´ë²¤íŠ¸ë¥¼ ì—°ê²°('í´ë¦­' ì´ë²¤íŠ¸)	
 		redButton.addActionListener(e -> mainPanel.setBackground(Color.RED));
 		
-		// ÀÍ¸íÅ¬·¡½º
+		// ìµëª…í´ë˜ìŠ¤
 		blueButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				mainPanel.setBackground(Color.BLUE);
 			}
 		});
 		
-		// Åø¹Ù¿¡ ¹öÆ°À» ºÙÀÓ
+		// íˆ´ë°”ì— ë²„íŠ¼ì„ ë¶™ì„
 		add(redButton);
 		add(blueButton);		
 	}

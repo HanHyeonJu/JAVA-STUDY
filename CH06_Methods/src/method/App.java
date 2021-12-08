@@ -3,24 +3,24 @@ package method;
 public class App {
 
 	public static void main(String[] args) {
-		// ÀÎ½ºÅÏ½º º¯¼öÀÇ °ªÀÌ ¾øÀ» ¶§ ÀÚµ¿À¸·Î 0, null ÃÊ±âÈ­µÊ
+		// ì¸ìŠ¤í„´ìŠ¤ ë³€ìˆ˜ì˜ ê°’ì´ ì—†ì„ ë•Œ ìë™ìœ¼ë¡œ 0, null ì´ˆê¸°í™”ë¨
 		
 		Person p1 = new Person();
 		
-		System.out.println(p1.name); // ÂüÁ¶ÀÚ·áÇü StringÀº ³Î ÃÊ±â°ª
-		System.out.println(p1.age); // ±âº»ÀÚ·áÇü int´Â 0ÃÊ±âÈ­
+		System.out.println(p1.name); // ì°¸ì¡°ìë£Œí˜• Stringì€ ë„ ì´ˆê¸°ê°’
+		System.out.println(p1.age); // ê¸°ë³¸ìë£Œí˜• intëŠ” 0ì´ˆê¸°í™”
 		
-		p1.sayHello(); // ¸Ş¼Òµå È£Ãâ
+		p1.sayHello(); // ë©”ì†Œë“œ í˜¸ì¶œ
 		
-		p1.name = "Æë¼ö";
+		p1.name = "í­ìˆ˜";
 		p1.age = 7;
 		
 //		System.out.println(p1.name);
 //		System.out.println(p1.age);
-		p1.sayHello(); // ¸Ş¼Òµå È£Ãâ
+		p1.sayHello(); // ë©”ì†Œë“œ í˜¸ì¶œ
 		
 		Person p2 = new Person();
-		p2.name = "¶óÀÌ¾ğ";
+		p2.name = "ë¼ì´ì–¸";
 		
 		p2.sayHello();
 		

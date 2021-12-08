@@ -8,18 +8,18 @@ import javax.swing.JFrame;
 
 public class MainFrame extends JFrame {
 	
-	private static final long serialVersionUID = 1L; // JFrame ¿¡¼­´Â ½Ã¸®¾ó³Ñ¹ö°¡ ÇÊ¿äÇÏ±â ¶§¹®¿¡ ³ÖÀ½, ¾ÈÇÏ¸é ¿ö´×¹ß»ı
+	private static final long serialVersionUID = 1L; // JFrame ì—ì„œëŠ” ì‹œë¦¬ì–¼ë„˜ë²„ê°€ í•„ìš”í•˜ê¸° ë•Œë¬¸ì— ë„£ìŒ, ì•ˆí•˜ë©´ ì›Œë‹ë°œìƒ
 
-	// »ı¼ºÀÚ
+	// ìƒì„±ì
 	public MainFrame(String title) {
-		super(title); // ??????????????? Ã¢ÀÇ ÀÌ¸§À» ³Ö¾î¼­ »ı¼º
-		//ÆĞ³Î ³Ö±â
-		setLayout(new BorderLayout()); // Ã¢¿¡ Ç¥½ÃµÉ ·¹ÀÌ¾Æ¿ôÀ» Á¤ÇØÁÜ (BorderLayoutÀº Java Swing LayoutÀÇ ÇÑ Á¾·ù), Ã¢¿¡ ÄÄÆ÷³ÍÆ®(¹öÆ°)À» ºÙÀÌ±â À§ÇÔ
+		super(title); // ??????????????? ì°½ì˜ ì´ë¦„ì„ ë„£ì–´ì„œ ìƒì„±
+		//íŒ¨ë„ ë„£ê¸°
+		setLayout(new BorderLayout()); // ì°½ì— í‘œì‹œë  ë ˆì´ì•„ì›ƒì„ ì •í•´ì¤Œ (BorderLayoutì€ Java Swing Layoutì˜ í•œ ì¢…ë¥˜), ì°½ì— ì»´í¬ë„ŒíŠ¸(ë²„íŠ¼)ì„ ë¶™ì´ê¸° ìœ„í•¨
 		
-//		JPanel panel = new JPanel(); // ÆĞ³Î »ı¼º
-//		panel.setBackground(Color.GREEN); // »ö ¼³Á¤
-		add(new Toolbar(), BorderLayout.NORTH); // À§ÂÊ¿¡ Åø¹Ù ºÙÀÌ±â
-		add(new Mainpanel(), BorderLayout.CENTER); // ÆĞ³ÎÀ» ¸ŞÀÎÇÁ·¹ÀÓ¿¡ ºÙÀÌ±â(Áß¾Ó À§Ä¡)
+//		JPanel panel = new JPanel(); // íŒ¨ë„ ìƒì„±
+//		panel.setBackground(Color.GREEN); // ìƒ‰ ì„¤ì •
+		add(new Toolbar(), BorderLayout.NORTH); // ìœ„ìª½ì— íˆ´ë°” ë¶™ì´ê¸°
+		add(new Mainpanel(), BorderLayout.CENTER); // íŒ¨ë„ì„ ë©”ì¸í”„ë ˆì„ì— ë¶™ì´ê¸°(ì¤‘ì•™ ìœ„ì¹˜)
 		
 		setSize(600,400);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

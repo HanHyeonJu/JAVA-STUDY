@@ -1,11 +1,11 @@
 package Casting;
 
 public class HouseCat extends Cat {
-	@Override // ¾î³ëÅ×ÀÌ¼Ç - ¿À¹ö¶óÀÌµù µÆ´Ù°í Ç¥½ÃÇØÁØ °Å
-	public void vocal() { // ¿À¹ö¶óÀÌµù ¸Ş¼Òµå(»óÀ§Å¬·¡½º¿¡ ÀÖ´Â ¸Ş¼Òµå¸¦ ÇÏÀ§Å¬·¡½º¿¡µµ ¸¸µç °Í)
-		System.out.println("¹Ì¾ß¿ì~");
+	@Override // ì–´ë…¸í…Œì´ì…˜ - ì˜¤ë²„ë¼ì´ë”© ëë‹¤ê³  í‘œì‹œí•´ì¤€ ê±°
+	public void vocal() { // ì˜¤ë²„ë¼ì´ë”© ë©”ì†Œë“œ(ìƒìœ„í´ë˜ìŠ¤ì— ìˆëŠ” ë©”ì†Œë“œë¥¼ í•˜ìœ„í´ë˜ìŠ¤ì—ë„ ë§Œë“  ê²ƒ)
+		System.out.println("ë¯¸ì•¼ìš°~");
 	}
-	public void call(){ // ÇÏ¿ì½ºÄ¹¸¸ °¡Áø ¸Ş¼Òµå
-		System.out.println("Áı»ç¸¦ ºÎ¸¥´Ù~");
+	public void call(){ // í•˜ìš°ìŠ¤ìº£ë§Œ ê°€ì§„ ë©”ì†Œë“œ
+		System.out.println("ì§‘ì‚¬ë¥¼ ë¶€ë¥¸ë‹¤~");
 	}
 }

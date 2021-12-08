@@ -3,22 +3,22 @@ package application;
 import java.util.Random;
 
 public class RandomWord {
-	// ½ºÆäÀÌ½º¹Ù·Î ¶ç¾îÁø ´Ü¾îµéÀ» ¹®ÀÚ¿­·Î str¿¡ ÀúÀåÇÔ
+	// ìŠ¤í˜ì´ìŠ¤ë°”ë¡œ ë„ì–´ì§„ ë‹¨ì–´ë“¤ì„ ë¬¸ìì—´ë¡œ strì— ì €ì¥í•¨
 	private String str = "collection manufacturer economics painting distribution replacement percentage chocolate customer elevator cigarette foundation employment initiative operation platform leadership university strategy priority possibility election depression accident property inspector organization administration marriage teaching baseball guidance environment historian passenger philosophy engineering language relationship childhood satisfaction information permission medicine solution importance attitude politics industry complaint";
-	// str¿¡ ÀúÀåµÈ ¹®ÀÚ¿­µéÀ» words¶ó´Â ¹è¿­¿¡ ¸®ÅÏ
-	// ¹®ÀÚ¿­À» ½ºÆäÀÌ½º·Î Àß¶ó¼­ ¹è¿­¿¡ ´Ü¾î·Î ÀÔ·Â
+	// strì— ì €ì¥ëœ ë¬¸ìì—´ë“¤ì„ wordsë¼ëŠ” ë°°ì—´ì— ë¦¬í„´
+	// ë¬¸ìì—´ì„ ìŠ¤í˜ì´ìŠ¤ë¡œ ì˜ë¼ì„œ ë°°ì—´ì— ë‹¨ì–´ë¡œ ì…ë ¥
 	private String[] words = str.split(" ");
 
-	private String selectword; // ·£´ıÀ¸·Î ¼±ÅÃµÈ ´Ü¾î
-	private char[] characters; // ¹®ÀÚ ¹è¿­(Ã¶ÀÚ¸¦ ¸ÂÀ¸¸é ÀúÀå)
+	private String selectword; // ëœë¤ìœ¼ë¡œ ì„ íƒëœ ë‹¨ì–´
+	private char[] characters; // ë¬¸ì ë°°ì—´(ì² ìë¥¼ ë§ìœ¼ë©´ ì €ì¥)
 	private Random random = new Random(); // ???????????????????????
 
 	public RandomWord() {
-		// »ı¼ºÀÚ¿¡ ·£´ı ´Ü¾î¸¦ ¼±ÅÃ
+		// ìƒì„±ìì— ëœë¤ ë‹¨ì–´ë¥¼ ì„ íƒ
 
-//		selectword = words[0]; // ·£´ıÀ¸·Î ¼±ÅÃµÇµµ·Ï ¼öÁ¤ - >
+//		selectword = words[0]; // ëœë¤ìœ¼ë¡œ ì„ íƒë˜ë„ë¡ ìˆ˜ì • - >
 		selectword = words[random.nextInt(words.length)];
-		characters = new char[selectword.length()]; // ¼±ÅÃ´Ü¾îÀÇ ±æÀÌ¸¸Å­ ¹®ÀÚ¹è¿­ Å©±â·Î »ı¼º
+		characters = new char[selectword.length()]; // ì„ íƒë‹¨ì–´ì˜ ê¸¸ì´ë§Œí¼ ë¬¸ìë°°ì—´ í¬ê¸°ë¡œ ìƒì„±
 	}
 
 	public void getWords() {
@@ -29,32 +29,32 @@ public class RandomWord {
 	
 
 	public String toString() {
-		// ´Ü¾î¸¦_·Î Ãâ·ÂÇÑ´Ù.
+		// ë‹¨ì–´ë¥¼_ë¡œ ì¶œë ¥í•œë‹¤.
 //		String text = "";
 		StringBuilder sb = new StringBuilder();
-		//characters[3] ='X'; //Å×½ºÆ®
+		//characters[3] ='X'; //í…ŒìŠ¤íŠ¸
 		for (char c : characters) {
-//			if (c == '\u0000'){//¿ª½½·¡½Ãu000Àº ¹®ÀÚÀÇ ÃÊ±â°ª(Á¤¼öÀÇ 0, ¹®ÀÚ¿­ÀÇ null), ¹®ÀÚÀÇ ÃÊ±â°ªÀÌ¸é ¾ÆÁ÷ ¸ÂÃßÁö ¸øÇÑ ¹®ÀÚ
-////				text += '-';// Æ²¸°¹®ÀÚ
+//			if (c == '\u0000'){//ì—­ìŠ¬ë˜ì‹œu000ì€ ë¬¸ìì˜ ì´ˆê¸°ê°’(ì •ìˆ˜ì˜ 0, ë¬¸ìì—´ì˜ null), ë¬¸ìì˜ ì´ˆê¸°ê°’ì´ë©´ ì•„ì§ ë§ì¶”ì§€ ëª»í•œ ë¬¸ì
+////				text += '-';// í‹€ë¦°ë¬¸ì
 //				sb.append('_');
 //			} 
 //			else{
-//				sb.append(c); // ¸ÂÈù¹®ÀÚ
+//				sb.append(c); // ë§íŒë¬¸ì
 //			}
-			sb.append(c=='\u0000'? '_' : c); // »ïÇ×¿¬»êÀÚ¸¦ ÀÌ¿ëÇÑ ¹æ¹ı
-			sb.append(' '); // Ã¶ÀÚ¸¦ ÇÑÄ­¾¿ ½ºÆäÀÌ½º¹Ù
+			sb.append(c=='\u0000'? '_' : c); // ì‚¼í•­ì—°ì‚°ìë¥¼ ì´ìš©í•œ ë°©ë²•
+			sb.append(' '); // ì² ìë¥¼ í•œì¹¸ì”© ìŠ¤í˜ì´ìŠ¤ë°”
 			
 		}
 		
-		//System.out.println(selectword); // Á¤´äÃâ·Â (Å×½ºÆ®¿ë)
-		return sb.toString(); // ¼±ÅÃµÈ ·£´ı ´Ü¾î¸¦ °¡Á®¿È
+		//System.out.println(selectword); // ì •ë‹µì¶œë ¥ (í…ŒìŠ¤íŠ¸ìš©)
+		return sb.toString(); // ì„ íƒëœ ëœë¤ ë‹¨ì–´ë¥¼ ê°€ì ¸ì˜´
 	}
 	
 	public void addGuess(char c) {
-		//³Ñ¾î¿Â ¹®ÀÚ¸¦ °Ë»çÇØ¼­ ¼±ÅÃ ´Ü¾î¿¡ ÀÖÀ¸¸é characters ¹è¿­¿¡ ÀúÀå
-		for(int i = 0; i < selectword.length(); i++ ) { //´Ü¾î ±æÀÌ¸¸Å­ ¹İº¹
+		//ë„˜ì–´ì˜¨ ë¬¸ìë¥¼ ê²€ì‚¬í•´ì„œ ì„ íƒ ë‹¨ì–´ì— ìˆìœ¼ë©´ characters ë°°ì—´ì— ì €ì¥
+		for(int i = 0; i < selectword.length(); i++ ) { //ë‹¨ì–´ ê¸¸ì´ë§Œí¼ ë°˜ë³µ
 			if(c == selectword.charAt(i)) {
-				characters[i] = c; //¿©±â±îÁö ÇÏ¸é ÇöÀç ´Ü¾î¸¦ ´Ù ¸ÂÃß´õ¶óµµ Á¾·áµÇÁö ¾Ê´Â´Ù, Ã¼Å© ´ë½Å ´Ü¾î°¡ ¸ÂÀ¸¸é Á¾·áÇÏ´Â ÄÚµå ÇÊ¿ä
+				characters[i] = c; //ì—¬ê¸°ê¹Œì§€ í•˜ë©´ í˜„ì¬ ë‹¨ì–´ë¥¼ ë‹¤ ë§ì¶”ë”ë¼ë„ ì¢…ë£Œë˜ì§€ ì•ŠëŠ”ë‹¤, ì²´í¬ ëŒ€ì‹  ë‹¨ì–´ê°€ ë§ìœ¼ë©´ ì¢…ë£Œí•˜ëŠ” ì½”ë“œ í•„ìš”
 				
 			}
 		}
@@ -62,13 +62,13 @@ public class RandomWord {
 	}
 
 	public boolean isCompleted() {
-		// Ã¶ÀÚ¸¦ ´Ù ¸ÂÃè´ÂÁö Ã¼Å©ÇØ¼­ true or false·Î ¸®ÅÏ
+		// ì² ìë¥¼ ë‹¤ ë§ì·„ëŠ”ì§€ ì²´í¬í•´ì„œ true or falseë¡œ ë¦¬í„´
 		for(char c : characters) {
 			if(c=='\u0000') {
-				return false; //¾ÆÁ÷ ¸ÂÃç¾ßÇÒ ¹®ÀÚ°¡ ÀÖÀ½
+				return false; //ì•„ì§ ë§ì¶°ì•¼í•  ë¬¸ìê°€ ìˆìŒ
 			}
 		}
-		return true; // ´Ù ¸ÂÃèÀ½
+		return true; // ë‹¤ ë§ì·„ìŒ
 	}
 
 

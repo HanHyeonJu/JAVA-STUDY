@@ -2,12 +2,12 @@ package returnvalue;
 
 public class ReturnMethod {
 //	void getAnimal() {
-//		System.out.println("°í¾çÀÌ¸¦ ¸®ÅÏÇÕ´Ï´Ù.");
+//		System.out.println("ê³ ì–‘ì´ë¥¼ ë¦¬í„´í•©ë‹ˆë‹¤.");
 //	}
 	
-	String getAnimal() { //() <- ¿ä ¾È¿¡ µé¾î°¡´Â°Ô ¸Å°³º¯¼ö
-		System.out.println("°í¾çÀÌ¸¦ ¸®ÅÏÇÕ´Ï´Ù.");
-		return "°í¾çÀÌ";
+	String getAnimal() { //() <- ìš” ì•ˆì— ë“¤ì–´ê°€ëŠ”ê²Œ ë§¤ê°œë³€ìˆ˜
+		System.out.println("ê³ ì–‘ì´ë¥¼ ë¦¬í„´í•©ë‹ˆë‹¤.");
+		return "ê³ ì–‘ì´";
 	}
 	
 }

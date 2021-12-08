@@ -5,35 +5,35 @@ import java.util.Scanner;
 public class If {
 
 	public static void main(String[] args) {
-		//½ºÄ³³Ê
+		//ìŠ¤ìºë„ˆ
 		Scanner scanner =new Scanner(System.in); 
 		
-		System.out.print("»ç°úÀÇ °¹¼ö´Â?");
+		System.out.print("ì‚¬ê³¼ì˜ ê°¯ìˆ˜ëŠ”?");
 		int apple = scanner.nextInt();
 		
-		System.out.print("¹Ù³ª³ªÀÇ °¹¼ö´Â?");
+		System.out.print("ë°”ë‚˜ë‚˜ì˜ ê°¯ìˆ˜ëŠ”?");
 		int banana = scanner.nextInt();
-		scanner.close(); // ½ºÄ³³Ê¸¦ ´õ ÀÌ»ó ¾²Áö ¾ÊÀ» ¶§´Â Á¾·á ½ÃÄÑÁà¾ß ÇÔ
+		scanner.close(); // ìŠ¤ìºë„ˆë¥¼ ë” ì´ìƒ ì“°ì§€ ì•Šì„ ë•ŒëŠ” ì¢…ë£Œ ì‹œì¼œì¤˜ì•¼ í•¨
 		
 		if(apple > banana) {
-			System.out.println("»ç°ú°¡ ¹Ù³ª³ªº¸´Ù ¸¹À½");
+			System.out.println("ì‚¬ê³¼ê°€ ë°”ë‚˜ë‚˜ë³´ë‹¤ ë§ìŒ");
 		}
 		if(banana > apple) {
-			System.out.println("¹Ù³ª³ª°¡ »ç°úº¸´Ù ¸¹À½");
+			System.out.println("ë°”ë‚˜ë‚˜ê°€ ì‚¬ê³¼ë³´ë‹¤ ë§ìŒ");
 		}
-		System.out.println("ÇÁ·Î±×·¥ Á¾·á.");
+		System.out.println("í”„ë¡œê·¸ë¨ ì¢…ë£Œ.");
 
-		// IF Á¶°Ç¹®
+		// IF ì¡°ê±´ë¬¸
 //		int apple = 5;
 //		int banana = 10;
 //		
-//		// ifÀÇ Á¶°ÇÀÌ ÂüÀÏ °æ¿ì¿¡ {}¾ÈÀÇ ¸í·É¹®À» ½ÇÇàÇÑ´Ù		
+//		// ifì˜ ì¡°ê±´ì´ ì°¸ì¼ ê²½ìš°ì— {}ì•ˆì˜ ëª…ë ¹ë¬¸ì„ ì‹¤í–‰í•œë‹¤		
 //		if(apple > banana) {
-//			System.out.println("»ç°ú°¡ ¹Ù³ª³ªº¸´Ù ¸¹À½");
+//			System.out.println("ì‚¬ê³¼ê°€ ë°”ë‚˜ë‚˜ë³´ë‹¤ ë§ìŒ");
 //		}
-//		System.out.println("ÇÁ·Î±×·¥ Á¾·á.");
+//		System.out.println("í”„ë¡œê·¸ë¨ ì¢…ë£Œ.");
 //		
-//		¿ö´×ÀÌ ÀÖ¾îµµ ÇÁ·Î±×·¥ ½ÇÇàÀº °¡´ÉÇÔ
+//		ì›Œë‹ì´ ìˆì–´ë„ í”„ë¡œê·¸ë¨ ì‹¤í–‰ì€ ê°€ëŠ¥í•¨
 	}
 
 }

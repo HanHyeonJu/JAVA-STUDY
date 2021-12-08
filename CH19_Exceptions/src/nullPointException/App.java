@@ -4,13 +4,13 @@ import java.util.Scanner;
 
 public class App {
 	public static void main(String[] args) {
-		// ³ÎÆ÷ÀÎÆ® ¿¹¿Ü´Â RuntimeExceptionÀ¸·Î ¿¹¾àÃ³¸® ¾ÈÇØµµ µÊ
+		// ë„í¬ì¸íŠ¸ ì˜ˆì™¸ëŠ” RuntimeExceptionìœ¼ë¡œ ì˜ˆì•½ì²˜ë¦¬ ì•ˆí•´ë„ ë¨
 		
-		// ·±Å¸¸² ¿¹¿Ü ¿¹
+		// ëŸ°íƒ€ë¦¼ ì˜ˆì™¸ ì˜ˆ
 		System.out.println(5/0);
 		
-		// ³ÎÆ÷ÀÎÆ® ¿¹¿Ü, °´Ã¼°¡ ³Î°ªÀÎµ¥ »ç¿ëÇÒ °æ¿ì
-		Scanner scanner = null; // °´Ã¼´Â »ı¼º ¾ÈµÊ
+		// ë„í¬ì¸íŠ¸ ì˜ˆì™¸, ê°ì²´ê°€ ë„ê°’ì¸ë° ì‚¬ìš©í•  ê²½ìš°
+		Scanner scanner = null; // ê°ì²´ëŠ” ìƒì„± ì•ˆë¨
 		scanner.nextInt();
 		
 		

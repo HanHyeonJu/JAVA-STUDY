@@ -1,11 +1,11 @@
 package appication;
 
-import entities.*; // ´Ù¸¥ ÆĞÅ°Áö¿¡ ÀÖ´Â Å¬·¡½ºµéÀÌ±â ¶§¹®¿¡ import·Î ºÒ·¯ ¿Í¾ßÇÔ, * : ÀüÃ¼ ºÒ·¯¿È
+import entities.*; // ë‹¤ë¥¸ íŒ¨í‚¤ì§€ì— ìˆëŠ” í´ë˜ìŠ¤ë“¤ì´ê¸° ë•Œë¬¸ì— importë¡œ ë¶ˆëŸ¬ ì™€ì•¼í•¨, * : ì „ì²´ ë¶ˆëŸ¬ì˜´
 
 public class App {
 	public static void main(String[] args) {
 		Fruit f1 = new Apple();
-//		f1.id // fruit Å¬·¡½º¿¡¼­ protected·Î id¸Ş¼Òµå¸¦ ¸¸µé¾ú±â ¶§¹®¿¡ ´Ù¸¥ ÆĞÅ°ÁöÀÎ app¿¡¼­ »ç¿ëÇÒ ¼ö ¾ø´Ù.
+//		f1.id // fruit í´ë˜ìŠ¤ì—ì„œ protectedë¡œ idë©”ì†Œë“œë¥¼ ë§Œë“¤ì—ˆê¸° ë•Œë¬¸ì— ë‹¤ë¥¸ íŒ¨í‚¤ì§€ì¸ appì—ì„œ ì‚¬ìš©í•  ìˆ˜ ì—†ë‹¤.
 		System.out.println(f1.toString());
 		
 		Fruit f2 = new Banana();

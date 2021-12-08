@@ -3,11 +3,11 @@ package timer_Example;
 import java.util.Timer;
 import java.util.TimerTask;
 
-class Task extends TimerTask{ // Ãß»óÅ¬·¡½º¸¦ »ó¼Ó¹ŞÀ½
+class Task extends TimerTask{ // ì¶”ìƒí´ë˜ìŠ¤ë¥¼ ìƒì†ë°›ìŒ
 
 	@Override
 	public void run() {
-		System.out.println("Çï·ç¿ì!");
+		System.out.println("í—¬ë£¨ìš°!");
 	}
 	
 }

@@ -3,18 +3,18 @@ package example;
 public class Test1 {
 
 	public static void main(String[] args) {
-		// ¿¹Á¦ 1¹ø
-		String a = "È«ÆÅ";
-		System.out.println("ÀÌ¸§: "+a);
+		// ì˜ˆì œ 1ë²ˆ
+		String a = "í™íŒ";
+		System.out.println("ì´ë¦„: "+a);
 		
 		int b = 35;
-		System.out.println("³ªÀÌ: "+b);
+		System.out.println("ë‚˜ì´: "+b);
 		
 		double c = 176.4;
-		System.out.println("Å°: "+c);
+		System.out.println("í‚¤: "+c);
 		
 		boolean d = true;
-		System.out.println("ÀÔ¹®ÀÚÀÔ´Ï±î? "+d);
+		System.out.println("ì…ë¬¸ìì…ë‹ˆê¹Œ? "+d);
 
 	}
 

@@ -3,14 +3,14 @@ package constructors;
 public class App {
 
 	public static void main(String[] args) {
-		// »ı¼ºÀÚ : Å¬·¡½ºÀÇ Æ¯º°ÇÑ ¸Ş¼Òµå·Î °´Ã¼¸¦ »ı¼º
-		Person p1 =new Person("Æë¼ö",120.0);
-		Person p2 =new Person("±æµ¿",172.5);
+		// ìƒì„±ì : í´ë˜ìŠ¤ì˜ íŠ¹ë³„í•œ ë©”ì†Œë“œë¡œ ê°ì²´ë¥¼ ìƒì„±
+		Person p1 =new Person("í­ìˆ˜",120.0);
+		Person p2 =new Person("ê¸¸ë™",172.5);
 		Person p3 =new Person();
 		
-/*  System.out.println("ÀÌ¸§ : %s Å° %.1f \n", p1.getName(), p1.getHeight());
-	System.out.println("ÀÌ¸§ : %s Å° %.1f \n", p2.getName(), p2.getHeight());
-	System.out.println("ÀÌ¸§ : %s Å° %.1f \n", p3.getName(), p3.getHeight());*/
+/*  System.out.println("ì´ë¦„ : %s í‚¤ %.1f \n", p1.getName(), p1.getHeight());
+	System.out.println("ì´ë¦„ : %s í‚¤ %.1f \n", p2.getName(), p2.getHeight());
+	System.out.println("ì´ë¦„ : %s í‚¤ %.1f \n", p3.getName(), p3.getHeight());*/
 		
 		
 	System.out.println(p1.toString());

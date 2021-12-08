@@ -2,11 +2,11 @@ package super_Constructor;
 
 public class Employee extends Person{
 	public Employee() {
-		super("ÀÍ¸í"); //ºÎ¸ğ Å¬·¡½ºÀÇ »ı¼ºÀÚ (¸Å°³º¯¼ö°¡ ¾ø´Ù¸é »ı·«°¡´ÉÇÏÁö¸¸ »ó¼Ó ¹ŞÀ¸¸é ¹«Á¶°Ç super();°¡ »ı±ä´Ù ±×·¡¼­ ºÎ¸ğÅ¬·¡½ºÀÇ »ı¼ºÀÚ°¡ ¸ÕÀú Ãâ·ÂµÊ
-		System.out.println("Employee »ı¼ºÀÚ");
+		super("ìµëª…"); //ë¶€ëª¨ í´ë˜ìŠ¤ì˜ ìƒì„±ì (ë§¤ê°œë³€ìˆ˜ê°€ ì—†ë‹¤ë©´ ìƒëµê°€ëŠ¥í•˜ì§€ë§Œ ìƒì† ë°›ìœ¼ë©´ ë¬´ì¡°ê±´ super();ê°€ ìƒê¸´ë‹¤ ê·¸ë˜ì„œ ë¶€ëª¨í´ë˜ìŠ¤ì˜ ìƒì„±ìê°€ ë¨¼ì € ì¶œë ¥ë¨
+		System.out.println("Employee ìƒì„±ì");
 	}
 	public Employee(String name) {
 		super(name);
-		System.out.println("Employee »ı¼ºÀÚ");
+		System.out.println("Employee ìƒì„±ì");
 	}
 }

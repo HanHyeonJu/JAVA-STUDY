@@ -6,25 +6,25 @@ public class Person {
 	private int age;
 	
 	public Person() {
-		System.out.println("µğÆúÆ® »ı¼ºÀÚ·Î »ı¼ºµÊ");
-		name = "¸ğ¸§";
+		System.out.println("ë””í´íŠ¸ ìƒì„±ìë¡œ ìƒì„±ë¨");
+		name = "ëª¨ë¦„";
 		age = 0;
 	}
 	
 	public Person(String name) {
-		System.out.println("personÀÌ »ı¼ºµÊ");
+		System.out.println("personì´ ìƒì„±ë¨");
 		this.name =name;
 		age = 0;
-	} // »ı¼ºÀÚ´Â ´Ù¸¥ ¸Ş¼Òµåµé°ú ´Ù¸£°Ô ¸®ÅÏÅ¸ÀÔÀÌ ¾ø°í º¯¼ö¸íÀÌ Å¬·¡½º ÀÌ¸§°ú °°´Ù.
+	} // ìƒì„±ìëŠ” ë‹¤ë¥¸ ë©”ì†Œë“œë“¤ê³¼ ë‹¤ë¥´ê²Œ ë¦¬í„´íƒ€ì…ì´ ì—†ê³  ë³€ìˆ˜ëª…ì´ í´ë˜ìŠ¤ ì´ë¦„ê³¼ ê°™ë‹¤.
 	
 	public Person(String name, int age) {
-		System.out.println("personÀÌ »ı¼ºµÊ");
+		System.out.println("personì´ ìƒì„±ë¨");
 		this.name =name;
 		this.age = 0;
 	}
 
 	@Override
-	public String toString() {//  °´Ã¼¿¡ Á¤º¸¸¦ ÀÔ·Â
+	public String toString() {//  ê°ì²´ì— ì •ë³´ë¥¼ ì…ë ¥
 		return "Person [name=" + name + ", age=" + age + "]";
 	}
 	

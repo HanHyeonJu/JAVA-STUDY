@@ -7,13 +7,13 @@ public class App {
 		System.out.println(fox1);
 //		(=)
 		System.out.println(fox1.toString());
-		System.out.printf("%x\n", fox1.hashCode()); // %x´Â ÁÖ¼Ò. ±×³É ÁÖ¼Ò¸¦ 16Áø¼ö·Î º¯È¯
+		System.out.printf("%x\n", fox1.hashCode()); // %xëŠ” ì£¼ì†Œ. ê·¸ëƒ¥ ì£¼ì†Œë¥¼ 16ì§„ìˆ˜ë¡œ ë³€í™˜
 		
 		Fox fox2 = fox1;
 		System.out.println(fox2);
 		
 		System.out.println(fox2.name);
 		
-	} // fox1°ú fox2´Â ¶È°°Àº °´Ã¼ ÁÖ¼Ò¸¦ °¡Áø´Ù.
+	} // fox1ê³¼ fox2ëŠ” ë˜‘ê°™ì€ ê°ì²´ ì£¼ì†Œë¥¼ ê°€ì§„ë‹¤.
 
 }

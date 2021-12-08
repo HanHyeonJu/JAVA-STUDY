@@ -3,23 +3,23 @@ package application;
 public class For {
 
 	public static void main(String[] args) {
-		// for ¹İº¹¹® for(ÃÊ±â°ª;Á¶°Ç;Áõ°¨){¸í·É¹®;}
+		// for ë°˜ë³µë¬¸ for(ì´ˆê¸°ê°’;ì¡°ê±´;ì¦ê°){ëª…ë ¹ë¬¸;}
 		for(int i = 0; i < 10; i++) {
 			System.out.println("i: " + i);
 		}
 		
-//		for(;;) { // ¹«ÇÑ ¹İº¹
-//			System.out.println("Çï·Î¿ì!");
+//		for(;;) { // ë¬´í•œ ë°˜ë³µ
+//			System.out.println("í—¬ë¡œìš°!");
 //		}
 		
-		//1¿¡¼­ 100±îÁöÀÇ ÇÕ
+		//1ì—ì„œ 100ê¹Œì§€ì˜ í•©
 		int sum = 0;
 		
 		for(int d = 1; d <= 100; d++) {
 			sum = sum + d;
 			// sum += d;
 		}
-		System.out.println("1ºÎÅÍ 100±îÁöÀÇ ÇÕ : "+sum);
+		System.out.println("1ë¶€í„° 100ê¹Œì§€ì˜ í•© : "+sum);
 	}
 
 }

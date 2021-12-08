@@ -10,11 +10,11 @@ public class App {
 		w.setTop(200);
 		w.setLeft(400);
 		
-		System.out.println("°¡·Î±æÀÌ : "+w.getWidth());
-		System.out.println("¼¼·Î±æÀÌ : "+w.getHeight());
-		System.out.println("ÇöÀçº¸ÀÓ: "+w.getIsVisible());
-		System.out.println("À§Ä¡ top : "+w.getTop());
-		System.out.println("À§Ä¡ left : "+w.getLeft());
+		System.out.println("ê°€ë¡œê¸¸ì´ : "+w.getWidth());
+		System.out.println("ì„¸ë¡œê¸¸ì´ : "+w.getHeight());
+		System.out.println("í˜„ì¬ë³´ì„: "+w.getIsVisible());
+		System.out.println("ìœ„ì¹˜ top : "+w.getTop());
+		System.out.println("ìœ„ì¹˜ left : "+w.getLeft());
 		
 
 	}

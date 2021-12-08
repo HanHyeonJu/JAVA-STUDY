@@ -3,6 +3,6 @@ package molla;
 public class Animal extends Creature {
 	public Animal(int x, int y, int age) {
 		super(x, y, age);
-	} // ºÎ¸ğ Å¬·¡½ºÀÎ CreatureÀÇ ±âº» »ı¼ºÀÚ¸¦ »ó¼Ó¹ŞÀ½
+	} // ë¶€ëª¨ í´ë˜ìŠ¤ì¸ Creatureì˜ ê¸°ë³¸ ìƒì„±ìë¥¼ ìƒì†ë°›ìŒ
 
 }

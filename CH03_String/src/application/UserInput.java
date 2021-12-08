@@ -1,19 +1,19 @@
 package application;
 
-import java.util.Scanner; // java.util ÆĞÅ°Áö ¾È¿¡ Scanner Å¬·¡½º¸¦ ºÒ·¯¿Í¼­ »ç¿ë°¡´É
+import java.util.Scanner; // java.util íŒ¨í‚¤ì§€ ì•ˆì— Scanner í´ë˜ìŠ¤ë¥¼ ë¶ˆëŸ¬ì™€ì„œ ì‚¬ìš©ê°€ëŠ¥
 
 public class UserInput {
 
 	public static void main(String[] args) {
-		// ÀÔ·ÂÀ» ¹Ş´Â Å¬·¡½º
-		Scanner scanner = new Scanner(System.in); // ½ºÄ³³Ê °´Ã¼¸¦ ¼±¾ğ
+		// ì…ë ¥ì„ ë°›ëŠ” í´ë˜ìŠ¤
+		Scanner scanner = new Scanner(System.in); // ìŠ¤ìºë„ˆ ê°ì²´ë¥¼ ì„ ì–¸
 		
-		System.out.print("¿Âµµ¸¦ ÀÔ·ÂÇØ ÁÖ¼¼¿ä : ");
+		System.out.print("ì˜¨ë„ë¥¼ ì…ë ¥í•´ ì£¼ì„¸ìš” : ");
 		
 		
-		double c = scanner.nextDouble(); // ½ºÄ³³Ê·Î ½Ç¼ö ÀÔ·Â ¹Ş¾Æ c¿¡ ÀÔ·Â, ½ÇÇà½Ã ÀÔ·ÂÀ» ´ë±âÇÏ°í ¿£ÅÍÅ°°¡ ÀÔ·ÂµÇ¸é Á¾·á
-		double f = (c * 9/5) + 32; // È­¾¾ º¯¼ö f´Â °ø½Ä´ë·Î
-		System.out.printf("¼·¾¾ %.1f ´Â È­¾¾ %.1f ÀÌ´Ù", c, f);
+		double c = scanner.nextDouble(); // ìŠ¤ìºë„ˆë¡œ ì‹¤ìˆ˜ ì…ë ¥ ë°›ì•„ cì— ì…ë ¥, ì‹¤í–‰ì‹œ ì…ë ¥ì„ ëŒ€ê¸°í•˜ê³  ì—”í„°í‚¤ê°€ ì…ë ¥ë˜ë©´ ì¢…ë£Œ
+		double f = (c * 9/5) + 32; // í™”ì”¨ ë³€ìˆ˜ fëŠ” ê³µì‹ëŒ€ë¡œ
+		System.out.printf("ì„­ì”¨ %.1f ëŠ” í™”ì”¨ %.1f ì´ë‹¤", c, f);
 	}
 
 }

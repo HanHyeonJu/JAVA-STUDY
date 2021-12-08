@@ -3,8 +3,8 @@ package enum_example;
 public class App {
 
 	public static void main(String[] args) {		
-		// enumÀ» Å¬·¡½º Ã³·³ »ç¿ë
-				Fruit f1 = Fruit.APPLE; // enum FruitÀÇ º¯¼ö f1Àº enum FruitÀÇ APPLE
+		// enumì„ í´ë˜ìŠ¤ ì²˜ëŸ¼ ì‚¬ìš©
+				Fruit f1 = Fruit.APPLE; // enum Fruitì˜ ë³€ìˆ˜ f1ì€ enum Fruitì˜ APPLE
 				Fruit f2 = Fruit.ORANGE; 
 					
 				System.out.println(f1);

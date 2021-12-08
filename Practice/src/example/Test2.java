@@ -3,14 +3,14 @@ package example;
 public class Test2 {
 
 	public static void main(String[] args) {
-		// ¿¹Á¦2
+		// ì˜ˆì œ2
 		int a = 96;
 		int b = 88;
 		int c = 76;
 		
-		System.out.println("¼öÇĞ: "+a);
-		System.out.println("°úÇĞ: "+b);
-		System.out.println("¿µ¾î: "+c);
+		System.out.println("ìˆ˜í•™: "+a);
+		System.out.println("ê³¼í•™: "+b);
+		System.out.println("ì˜ì–´: "+c);
 
 
 	}

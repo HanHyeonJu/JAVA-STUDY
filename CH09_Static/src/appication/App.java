@@ -3,26 +3,26 @@ package appication;
 public class App {
 
 	public static void main(String[] args) {
-		// ½ºÅ×Æ½ º¯¼ö´Â Å¬·¡½º¸í.º¯¼ö·Î °´Ã¼ »ı¼º¾øÀÌ »ç¿ë, ½ºÅ×Æ½ÀÌ ¾Æ´Ñ °ÍÀº ¸ğµÎ °´Ã¼¸¦ »ı¼ºÇØ¾ßÇÔ
-		// ¼öÇĞ°ø½ÄµéÀº ÁÖ·Î ½ºÅ×Æ½ º¯¼ö·Î µÇ¾îÀÖÀ½
+		// ìŠ¤í…Œí‹± ë³€ìˆ˜ëŠ” í´ë˜ìŠ¤ëª….ë³€ìˆ˜ë¡œ ê°ì²´ ìƒì„±ì—†ì´ ì‚¬ìš©, ìŠ¤í…Œí‹±ì´ ì•„ë‹Œ ê²ƒì€ ëª¨ë‘ ê°ì²´ë¥¼ ìƒì„±í•´ì•¼í•¨
+		// ìˆ˜í•™ê³µì‹ë“¤ì€ ì£¼ë¡œ ìŠ¤í…Œí‹± ë³€ìˆ˜ë¡œ ë˜ì–´ìˆìŒ
 		System.out.println(Cat.FOOD);
 		System.out.println(Math.PI);
 		
-		System.out.println(Cat.count); // °´Ã¼°¡ ¾øÁ¦¸¸ Å¬·¡½º¸í¸¸ ÀÖÀ¸¸é ¸Ş¸ğ¸®¿¡ ÀúÀåµÇ°í ½ÇÇàµÊ(¸ŞÀÎµµ ¸¶Âù°¡Áö)
+		System.out.println(Cat.count); // ê°ì²´ê°€ ì—†ì œë§Œ í´ë˜ìŠ¤ëª…ë§Œ ìˆìœ¼ë©´ ë©”ëª¨ë¦¬ì— ì €ì¥ë˜ê³  ì‹¤í–‰ë¨(ë©”ì¸ë„ ë§ˆì°¬ê°€ì§€)
 		
-		Cat cat1 = new Cat("¸¶Æ¿´Ù");
-		System.out.println(cat1.getCount());// ½ºÅÂÆ½ º¯¼ö°¡ °´Ã¼¿¡ °øÀ¯µÈ´Ù´Â ¿¹½Ã
-		Cat cat2 = new Cat("¶óÀÌ¾ğ");
-		System.out.println(cat2.getCount()); // °´Ã¼¿¡ °øÀ¯2
+		Cat cat1 = new Cat("ë§ˆí‹¸ë‹¤");
+		System.out.println(cat1.getCount());// ìŠ¤íƒœí‹± ë³€ìˆ˜ê°€ ê°ì²´ì— ê³µìœ ëœë‹¤ëŠ” ì˜ˆì‹œ
+		Cat cat2 = new Cat("ë¼ì´ì–¸");
+		System.out.println(cat2.getCount()); // ê°ì²´ì— ê³µìœ 2
 		
 		System.out.println(cat1.toString());
 		System.out.println(cat2.toString());
 		
-		Cat cat3 = new Cat("¿ï¹ö¸°");
-		System.out.println(cat3.getCount()); // °´Ã¼¿¡ °øÀ¯3
+		Cat cat3 = new Cat("ìš¸ë²„ë¦°");
+		System.out.println(cat3.getCount()); // ê°ì²´ì— ê³µìœ 3
 		System.out.println(cat3.toString());
 		
-		System.out.println(Cat.getCount()); // getCount¸¦ static º¯¼ö¸¦ ¸¸µé¾îÁÖ¾úÀ» ¶§ °´Ã¼ ÇÊ¿ä¾øÀÌ Å¬·¡½º Cat¸¸À¸·Î ½ÇÇàÀÌ °¡´ÉÇÏ´Ù´Â °É º¸¿©ÁÜ
+		System.out.println(Cat.getCount()); // getCountë¥¼ static ë³€ìˆ˜ë¥¼ ë§Œë“¤ì–´ì£¼ì—ˆì„ ë•Œ ê°ì²´ í•„ìš”ì—†ì´ í´ë˜ìŠ¤ Catë§Œìœ¼ë¡œ ì‹¤í–‰ì´ ê°€ëŠ¥í•˜ë‹¤ëŠ” ê±¸ ë³´ì—¬ì¤Œ
 	}
 
 }

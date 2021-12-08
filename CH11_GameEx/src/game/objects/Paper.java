@@ -1,8 +1,8 @@
 package game.objects;
-//º¸, °ÔÀÓ¿ÀºêÁ§Æ® »ó¼Ó
+//ë³´, ê²Œì„ì˜¤ë¸Œì íŠ¸ ìƒì†
 public class Paper extends GameObject {
 	public  Paper() {
-		setId(2); // ¾ÆÀÌµğ¸¦ 0À¸·Î
-		setName("º¸"); //ÀÌ¸§À» °¡À§·Î
+		setId(2); // ì•„ì´ë””ë¥¼ 0ìœ¼ë¡œ
+		setName("ë³´"); //ì´ë¦„ì„ ê°€ìœ„ë¡œ
 	}
 }

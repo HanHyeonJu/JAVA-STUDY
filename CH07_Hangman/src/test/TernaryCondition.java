@@ -3,12 +3,12 @@ package test;
 public class TernaryCondition {
 
 	public static void main(String[] args) {
-		// »ïÇ× Á¶°Ç ¿¬»êÀÚ => Á¶°Ç ? A : B (if else¹®À» ÇÑ ÁÙ·Î ÁÙÀÓ)
+		// ì‚¼í•­ ì¡°ê±´ ì—°ì‚°ìž => ì¡°ê±´ ? A : B (if elseë¬¸ì„ í•œ ì¤„ë¡œ ì¤„ìž„)
 		System.out.println(true ? "yes" : "no");
 		System.out.println(false ? "yes" : "no");
 		
 		int value = 99;
-		value = value > 100 ? 100 : value; // 100º¸´Ù Å©¸é 100 Ãâ·Â ¾Æ´Ï¸é value
+		value = value > 100 ? 100 : value; // 100ë³´ë‹¤ í¬ë©´ 100 ì¶œë ¥ ì•„ë‹ˆë©´ value
 		System.out.println(value);
 		
 		int[] values = {6,3,92,64,17};
@@ -17,7 +17,7 @@ public class TernaryCondition {
 		for(int val : values) {
 //			if(val > max) {
 //				max = val;
-//			} // ¸Æ½º°ªº¸´Ù val°¡ Å©¸é val°ªÀ» ¸Æ½º¿¡ ³Ö´Â´Ù.
+//			} // ë§¥ìŠ¤ê°’ë³´ë‹¤ valê°€ í¬ë©´ valê°’ì„ ë§¥ìŠ¤ì— ë„£ëŠ”ë‹¤.
 			max = val > max ? val : max;
 		}
 		System.out.println(max);

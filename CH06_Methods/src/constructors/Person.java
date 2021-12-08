@@ -4,27 +4,27 @@ public class Person {
 	private String name;
 	private double height;
 	
-	// »ı¼ºÀÚ ¸Ş¼Òµå : public + Å¬·¡½º¸í(), ¸®ÅÏÅ¸ÀÔ¾øÀ½
-	// public person(){} - ±âº»»ı¼ºÀÚ(¸Å°³º¯¼ö°¡ ¾ø´Â °Í)
+	// ìƒì„±ì ë©”ì†Œë“œ : public + í´ë˜ìŠ¤ëª…(), ë¦¬í„´íƒ€ì…ì—†ìŒ
+	// public person(){} - ê¸°ë³¸ìƒì„±ì(ë§¤ê°œë³€ìˆ˜ê°€ ì—†ëŠ” ê²ƒ)
 	public Person() {
-		name = "ÀÍ¸í";
+		name = "ìµëª…";
 		height = 170;
-		System.out.println("ÇÑ »ç¶÷À» »ı¼º!");
+		System.out.println("í•œ ì‚¬ëŒì„ ìƒì„±!");
 	}
 
 	public Person(String name, double height) {
 		this.name =name;
 		this.height =height;
-		System.out.println("ÇÑ »ç¶÷À» »ı¼º!");
+		System.out.println("í•œ ì‚¬ëŒì„ ìƒì„±!");
 	}
-	//toString ¸Ş¼Òµå
+	//toString ë©”ì†Œë“œ
 	public String toString() {
-//		String text =" ÀÌ¸§ : "+name+", Å° : "+height;
+//		String text =" ì´ë¦„ : "+name+", í‚¤ : "+height;
 //		return text;
-		return " ÀÌ¸§ : "+name+", Å° : "+height;
+		return " ì´ë¦„ : "+name+", í‚¤ : "+height;
 	}
 	
-	// get set ¸Ş¼Òµå
+	// get set ë©”ì†Œë“œ
 	
 	public String getName() {
 		return name;

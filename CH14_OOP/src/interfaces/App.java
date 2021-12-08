@@ -3,10 +3,10 @@ package interfaces;
 public class App {
 
 	public static void main(String[] args) {
-		// ÀÎÅÍÆäÀÌ½º
-//		Describable ds = new Describable(); °´Ã¼¸¦ ¸¸µé ¼ö ¾ø´Ù.
+		// ì¸í„°í˜ì´ìŠ¤
+//		Describable ds = new Describable(); ê°ì²´ë¥¼ ë§Œë“¤ ìˆ˜ ì—†ë‹¤.
 		
-//		Object[] objs = { new Person(), new Computer() }; // Object´Â ¸ğµç Å¬·¡½ºÀÇ ºÎ¸ğ Å¬·¡½º¶ó ¿ä·¸°Ô ¸¸µå´Â °ÍÀÌ °¡´É
+//		Object[] objs = { new Person(), new Computer() }; // ObjectëŠ” ëª¨ë“  í´ë˜ìŠ¤ì˜ ë¶€ëª¨ í´ë˜ìŠ¤ë¼ ìš”ë ‡ê²Œ ë§Œë“œëŠ” ê²ƒì´ ê°€ëŠ¥
 		Describable[] objs = { new Person(), new Computer() };
 		
 		for(Describable ob : objs) {

@@ -3,7 +3,7 @@ package test;
 public class StringTest {
 
 	public static void main(String[] args) {
-		// ½ºÆ®¸µºô´õ Å×½ºÆ®
+		// ìŠ¤íŠ¸ë§ë¹Œë” í…ŒìŠ¤íŠ¸
 		
 		String text = "I ";
 		text += "have ";

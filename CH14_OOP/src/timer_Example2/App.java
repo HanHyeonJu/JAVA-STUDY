@@ -4,23 +4,23 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 
-class Task implements Runnable{ // ÀÎÅÍÆäÀÌ½º¸¦ ±¸Çö(?)
+class Task implements Runnable{ // ì¸í„°í˜ì´ìŠ¤ë¥¼ êµ¬í˜„(?)
 
 	@Override
-	public void run() {// RunnableÀÇ Ãß»ó¸Ş¼Òµå¸¦ ±¸Çö(¿Ï¼º)ÇÑ´Ù.
-		// ÇÒÀÏÀÇ ÄÚµå¸¦ Àû´Â´Ù.
-		System.out.println("Çï·ç¿ì!");
+	public void run() {// Runnableì˜ ì¶”ìƒë©”ì†Œë“œë¥¼ êµ¬í˜„(ì™„ì„±)í•œë‹¤.
+		// í• ì¼ì˜ ì½”ë“œë¥¼ ì ëŠ”ë‹¤.
+		System.out.println("í—¬ë£¨ìš°!");
 	}
 	
-}// ¹İº¹ÇÒ ½ÇÇà¹®
+}// ë°˜ë³µí•  ì‹¤í–‰ë¬¸
 
 public class App {
 
 	public static void main(String[] args) {
-		// Å¸ÀÌ¸Ó2
+		// íƒ€ì´ë¨¸2
 		ScheduledExecutorService executor = Executors.newScheduledThreadPool(1);
 		
-		executor.scheduleAtFixedRate(new Task(), 0, 1, TimeUnit.SECONDS); // 1ÃÊ¿¡ ÇÑ ¹ø¾¿ ¹İº¹
+		executor.scheduleAtFixedRate(new Task(), 0, 1, TimeUnit.SECONDS); // 1ì´ˆì— í•œ ë²ˆì”© ë°˜ë³µ
 	}
 
 }

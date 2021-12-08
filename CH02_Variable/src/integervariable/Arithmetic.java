@@ -3,16 +3,16 @@ package integervariable;
 public class Arithmetic {
 
 	public static void main(String[] args) {
-		// ¼ıÀÚ °è»ê
+		// ìˆ«ì ê³„ì‚°
 		System.out.println(7+3);
 		System.out.println(9/3);
-		System.out.println(10/3); // Á¤¼ö/Á¤¼ö = Á¤¼ö
+		System.out.println(10/3); // ì •ìˆ˜/ì •ìˆ˜ = ì •ìˆ˜
 		
 		System.out.println(10.0/3.0);
-		System.out.println(9/4.0); // Á¤¼ö/½Ç¼ö ÀÌ¶§ Å« °ª(byte)Å¸ÀÔÀ¸·Î
+		System.out.println(9/4.0); // ì •ìˆ˜/ì‹¤ìˆ˜ ì´ë•Œ í° ê°’(byte)íƒ€ì…ìœ¼ë¡œ
 		
 		System.out.println(3*4);
-		System.out.println(3*4.0); // ½Ç¼ö·Î °á°ú Ãâ·Â
+		System.out.println(3*4.0); // ì‹¤ìˆ˜ë¡œ ê²°ê³¼ ì¶œë ¥
 		System.out.println(3-4);
 	}
 

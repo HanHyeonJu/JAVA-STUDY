@@ -7,11 +7,11 @@ public class Break {
 
 		int count = 0;
 
-		while (true) { // ¹«ÇÑ¹Ýº¹
-			System.out.println("Çï·Î¿ì! " + count);
+		while (true) { // ë¬´í•œë°˜ë³µ
+			System.out.println("í—¬ë¡œìš°! " + count);
 
 			if (count == 5) {
-				break; // ¹Ýº¹¹® Á¾·á
+				break; // ë°˜ë³µë¬¸ ì¢…ë£Œ
 			}
 
 			System.out.println("How are you.");
@@ -20,7 +20,7 @@ public class Break {
 		}
 		
 		
-		System.out.println("ÇÁ·Î±×·¥ Á¾·á.");
+		System.out.println("í”„ë¡œê·¸ëž¨ ì¢…ë£Œ.");
 	}
 
 }

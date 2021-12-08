@@ -3,18 +3,18 @@ package static_InnerClass;
 public class Person {
 	class Head{
 		public void print() {
-			System.out.println("Çìµå");
+			System.out.println("í—¤ë“œ");
 		}
 	}
 	static class Body{
 		public void print() {
-			System.out.println("¹Ùµğ");
+			System.out.println("ë°”ë””");
 		}
 	}
 	public void print() {
 		Head head = new Head();
 		Body body = new Body();
-		// ³»ºÎ Å¬·¡½º´Â Å¬·¡½º ¾È¿¡¼­ °´Ã¼¸¦ ¸¸µé¾î »ç¿ëÇÏ¸é ½±°Ô »ç¿ë
+		// ë‚´ë¶€ í´ë˜ìŠ¤ëŠ” í´ë˜ìŠ¤ ì•ˆì—ì„œ ê°ì²´ë¥¼ ë§Œë“¤ì–´ ì‚¬ìš©í•˜ë©´ ì‰½ê²Œ ì‚¬ìš©
 		head.print();
 		body.print();
 	}

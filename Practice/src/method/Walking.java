@@ -3,12 +3,12 @@ package method;
 public class Walking {
 
 	public static void main(String[] args) {
-		/*Ä®·Î¸® °è»êÀ» À§ÇØ ¸Ş¼Òµå¸¦ È£ÃâÇÏ½Ã¿À*/
+		/*ì¹¼ë¡œë¦¬ ê³„ì‚°ì„ ìœ„í•´ ë©”ì†Œë“œë¥¼ í˜¸ì¶œí•˜ì‹œì˜¤*/
 		double result = calculateCalory(5000);
-		/*3. °á°ú¸¦ Ãâ·ÂÇÏ½Ã¿À*/
-		System.out.println("¼Ò¸ğ Ä®·Î¸®: "+result+"kcal");
+		/*3. ê²°ê³¼ë¥¼ ì¶œë ¥í•˜ì‹œì˜¤*/
+		System.out.println("ì†Œëª¨ ì¹¼ë¡œë¦¬: "+result+"kcal");
 		}
-		/*2. Ä®·Î¸® °è»ê ¸Ş¼Òµå¸¦ Á¤ÀÇÇÏ½Ã¿À*/
+		/*2. ì¹¼ë¡œë¦¬ ê³„ì‚° ë©”ì†Œë“œë¥¼ ì •ì˜í•˜ì‹œì˜¤*/
 		private static double calculateCalory(int walk) {
 			return 0.02 * walk;
 		}

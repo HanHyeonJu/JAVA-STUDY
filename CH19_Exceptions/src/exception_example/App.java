@@ -1,10 +1,10 @@
 package exception_example;
 
 public class App {
-	public static void main(String[] args) throws InterruptedException { // InterruptedException°°Àº ¿¹¿Ü°¡ ¹ß»ıÇÏ¸é throws ÇÏ°Ú´Ù(?)
-		System.out.println("ÇÏ³ª");
-		Thread.sleep(2000); // 2ÃÊ ÇÁ·Î±×·¥ ´ë±â => Tread.sleepÀ» »ç¿ëÇÏ¸é ¿¹¿ÜÃ³¸®¸¦ ÇØÁÖ¾î¾ß ÇÔ
-		System.out.println("µÑ");
+	public static void main(String[] args) throws InterruptedException { // InterruptedExceptionê°™ì€ ì˜ˆì™¸ê°€ ë°œìƒí•˜ë©´ throws í•˜ê² ë‹¤(?)
+		System.out.println("í•˜ë‚˜");
+		Thread.sleep(2000); // 2ì´ˆ í”„ë¡œê·¸ë¨ ëŒ€ê¸° => Tread.sleepì„ ì‚¬ìš©í•˜ë©´ ì˜ˆì™¸ì²˜ë¦¬ë¥¼ í•´ì£¼ì–´ì•¼ í•¨
+		System.out.println("ë‘˜");
 	}
 
 }

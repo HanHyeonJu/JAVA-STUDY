@@ -3,29 +3,29 @@ package application;
 public class ForEachArray {
 
 	public static void main(String[] args) {
-		// ¹è¿­¿¡ »ç¿ëÇÒ ¼ö ÀÖ´Â ¹İº¹¹® for each
-		// °£´ÜÇÑ ¹è¿­ÀÇ ¹İº¹¿¡´Â for each¹®À» »ç¿ëÇÏ°í ÀÎµ¦½º ¹øÈ£°¡ ÇÊ¿äÇÑ °æ¿ì for¹® »ç¿ë		
-		String[] fruits = {"¹Ù³ª³ª", "»ç°ú", "¼ö¹Ú"};
+		// ë°°ì—´ì— ì‚¬ìš©í•  ìˆ˜ ìˆëŠ” ë°˜ë³µë¬¸ for each
+		// ê°„ë‹¨í•œ ë°°ì—´ì˜ ë°˜ë³µì—ëŠ” for eachë¬¸ì„ ì‚¬ìš©í•˜ê³  ì¸ë±ìŠ¤ ë²ˆí˜¸ê°€ í•„ìš”í•œ ê²½ìš° forë¬¸ ì‚¬ìš©		
+		String[] fruits = {"ë°”ë‚˜ë‚˜", "ì‚¬ê³¼", "ìˆ˜ë°•"};
 		int[] n = {1,2,3};
 		boolean[] bool = {true, false, true};
 		double[] d = {1.1, 2.2, 3.3, 4.4};
 		
-		for(String x : fruits) { // for each¹® (º¯¼ö : ¹è¿­)
+		for(String x : fruits) { // for eachë¬¸ (ë³€ìˆ˜ : ë°°ì—´)
 			System.out.print(x+" ");
 		}
 		System.out.println();
 		
-		for(int x : n) { // for each¹® (º¯¼ö : ¹è¿­)
+		for(int x : n) { // for eachë¬¸ (ë³€ìˆ˜ : ë°°ì—´)
 			System.out.print(x+" ");
 		}
 		System.out.println();
 		
-		for(boolean x : bool) { // for each¹® (º¯¼ö : ¹è¿­)
+		for(boolean x : bool) { // for eachë¬¸ (ë³€ìˆ˜ : ë°°ì—´)
 			System.out.print(x+" ");
 		}
 		System.out.println();
 		
-		for(double x : d) { // for each¹® (º¯¼ö : ¹è¿­)
+		for(double x : d) { // for eachë¬¸ (ë³€ìˆ˜ : ë°°ì—´)
 			System.out.print(x+" ");
 		}
 	}

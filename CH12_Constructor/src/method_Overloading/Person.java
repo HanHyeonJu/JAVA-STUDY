@@ -1,27 +1,27 @@
 package method_Overloading;
 
 public class Person {
-	// ÀÌ¸§ÀÌ °°Àº ±×¸®Æ® ¸Ş¼Òµå°¡ 2°³
-	// ¸Ş¼ÒµåÀÇ ¸Å°³º¯¼öÀÇ °³¼ö³ª Å¸ÀÔÀÌ ´Ù¸£¸é ´Ù¸¥ ¸Ş¼Òµå·Î ÀÎ½Ä
+	// ì´ë¦„ì´ ê°™ì€ ê·¸ë¦¬íŠ¸ ë©”ì†Œë“œê°€ 2ê°œ
+	// ë©”ì†Œë“œì˜ ë§¤ê°œë³€ìˆ˜ì˜ ê°œìˆ˜ë‚˜ íƒ€ì…ì´ ë‹¤ë¥´ë©´ ë‹¤ë¥¸ ë©”ì†Œë“œë¡œ ì¸ì‹
 	public void greet() {
-		System.out.println("Çï·Î¿ì!");
+		System.out.println("í—¬ë¡œìš°!");
 	}
 	
 	public void greet(String name) {
-		System.out.println("Çï·ç¿ì! "+name);
+		System.out.println("í—¬ë£¨ìš°! "+name);
 	}
 	
 	public void greet(int height) {
 		if(height > 185) {
-			System.out.println("Å°°¡ Å©±º¿ä!");
+			System.out.println("í‚¤ê°€ í¬êµ°ìš”!");
 		}
-		System.out.println("Çï·Î¿ì!");
+		System.out.println("í—¬ë¡œìš°!");
 	}
 	
 	public void greet(String name, int height) {
 		if(height > 185) {
-			System.out.println("Å°°¡ Å©±º¿ä!");
+			System.out.println("í‚¤ê°€ í¬êµ°ìš”!");
 		}
-		System.out.println("Çï·Î¿ì!");
+		System.out.println("í—¬ë¡œìš°!");
 	}
 }

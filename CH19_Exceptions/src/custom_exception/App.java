@@ -13,10 +13,10 @@ public class App {
 		try {
 			stat.setTemperature(-36);
 		} catch (TempTooHighException e) {
-			// ¿Âµµ°¡ ³ôÀ» ¶§
+			// ì˜¨ë„ê°€ ë†’ì„ ë•Œ
 			System.out.println(e.getMessage()); 
 		} catch (TempTooRowException e) {
-			// ¿Âµµ°¡ ³·À» ¶§
+			// ì˜¨ë„ê°€ ë‚®ì„ ë•Œ
 			System.out.println(e.getMessage());
 		}
 		

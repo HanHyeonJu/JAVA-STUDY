@@ -1,26 +1,26 @@
-//¸Ş¼Òµå ·ÎÄÃ ÀÌ³ÊÅ¬·¡½º : ¸Ş¼Òµå ¾ÈÀÇ Å¬·¡½º
+//ë©”ì†Œë“œ ë¡œì»¬ ì´ë„ˆí´ë˜ìŠ¤ : ë©”ì†Œë“œ ì•ˆì˜ í´ë˜ìŠ¤
 package local_innerClass;
 
 public class App {
-	private String name; // ÀÎ½ºÅÏ½º º¯¼ö, °´Ã¼¸¦ »ı¼ºÇØ¾ß ½ÇÇàµÊ
+	private String name; // ì¸ìŠ¤í„´ìŠ¤ ë³€ìˆ˜, ê°ì²´ë¥¼ ìƒì„±í•´ì•¼ ì‹¤í–‰ë¨
 	
 	public App() {
-		name = "¾Ù¸®ÀÚº£½º"; // ±âº»»ı¼ºÀÚ¿¡ °´Ã¼ »ı¼º
+		name = "ì•¨ë¦¬ìë² ìŠ¤"; // ê¸°ë³¸ìƒì„±ìì— ê°ì²´ ìƒì„±
 	}
 	
 	public static void main(String[] args) {
-//		System.out.println(name); // static ¸Ş¼Òµå¿¡¼­´Â ÀÎ½ºÅÏ½º »ç¿ë ºÒ°¡ staticÀº °´Ã¼¸¦ »ı¼ºÇÏÁö ¸øÇÔ
+//		System.out.println(name); // static ë©”ì†Œë“œì—ì„œëŠ” ì¸ìŠ¤í„´ìŠ¤ ì‚¬ìš© ë¶ˆê°€ staticì€ ê°ì²´ë¥¼ ìƒì„±í•˜ì§€ ëª»í•¨
 		App app = new App(); 
-//		app.name = "Æë¼ö";
+//		app.name = "í­ìˆ˜";
 		app.run();
 	}
 
-	private void run() { // nameÀ» Ãâ·ÂÇÏ±â À§ÇÑ ¸Ş¼Òµå
+	private void run() { // nameì„ ì¶œë ¥í•˜ê¸° ìœ„í•œ ë©”ì†Œë“œ
 		System.out.println(name);
-		// Å¬·¡½º ¾ÈÀÇ ¸Ş¼Òµå¿¡ Å¬·¡½º
+		// í´ë˜ìŠ¤ ì•ˆì˜ ë©”ì†Œë“œì— í´ë˜ìŠ¤
 		class Printer{
 			public void print() {
-				System.out.println(name); // ³»ºÎÅ¬·¡½º´Â »óÀ§Å¬·¡½ºÀÇ º¯¼ö¸¦ »ç¿ë°¡´É
+				System.out.println(name); // ë‚´ë¶€í´ë˜ìŠ¤ëŠ” ìƒìœ„í´ë˜ìŠ¤ì˜ ë³€ìˆ˜ë¥¼ ì‚¬ìš©ê°€ëŠ¥
 			}
 		}
 		

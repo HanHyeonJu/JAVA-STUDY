@@ -5,22 +5,22 @@ import custom_exception.exceptions.TempTooHighException;
 import custom_exception.exceptions.TempTooRowException;
 
 public class Thermostat {
-	// ¿¹¿ÜÃ³¸® throws´Â ÇØ´ç ¿¹¿ÜÃ³¸®¸¦ ÀÌ ¸Ş¼Òµå¸¦ È£ÃâÇÒ ¶§ Ã³¸®ÇÏµµ·Ï ÇÔ(ÇØ´ç Å¬·¡½º¿¡¼­ »ç¿ëÇÏÁö ¾Ê°í ¸Ş¼­µå¸¦ »ç¿ëÇÏ´Â Å¬·¡½º¿¡ Ã³¸®ÇÑ´Ù´Â ¶æ)
-	public void setTemperature(double temperature) throws TempTooHighException, TempTooRowException  { // if¹®À¸·Î ¿Âµµ¸¦ ÀÔ·Â¹Ş¾Æ¼­ ¿Âµµ°¡ 0µµ ¹Ì¸¸ ¶Ç´Â 35µµ ÃÊ°úÀÎ °æ¿ì ¿¹¿Ü°¡ ¹ß»ıÇÏ´Â ¸Ş¼­µå
+	// ì˜ˆì™¸ì²˜ë¦¬ throwsëŠ” í•´ë‹¹ ì˜ˆì™¸ì²˜ë¦¬ë¥¼ ì´ ë©”ì†Œë“œë¥¼ í˜¸ì¶œí•  ë•Œ ì²˜ë¦¬í•˜ë„ë¡ í•¨(í•´ë‹¹ í´ë˜ìŠ¤ì—ì„œ ì‚¬ìš©í•˜ì§€ ì•Šê³  ë©”ì„œë“œë¥¼ ì‚¬ìš©í•˜ëŠ” í´ë˜ìŠ¤ì— ì²˜ë¦¬í•œë‹¤ëŠ” ëœ»)
+	public void setTemperature(double temperature) throws TempTooHighException, TempTooRowException  { // ifë¬¸ìœ¼ë¡œ ì˜¨ë„ë¥¼ ì…ë ¥ë°›ì•„ì„œ ì˜¨ë„ê°€ 0ë„ ë¯¸ë§Œ ë˜ëŠ” 35ë„ ì´ˆê³¼ì¸ ê²½ìš° ì˜ˆì™¸ê°€ ë°œìƒí•˜ëŠ” ë©”ì„œë“œ
 	
 		
 		setMachineTemperature(temperature);
 		
-		System.out.println("¿Âµµ ¼¼ÆÃ : " + temperature);
+		System.out.println("ì˜¨ë„ ì„¸íŒ… : " + temperature);
 	}
 
 	private void setMachineTemperature(double temperature) throws TempTooHighException, TempTooRowException  {
 		
 		if(temperature < 0) {
-			throw new TempTooRowException("¿Âµµ°¡ ³Ê¹« ³·½À´Ï´Ù."); // »õ ¿¹¿Ü¸¦ »ı¼º
+			throw new TempTooRowException("ì˜¨ë„ê°€ ë„ˆë¬´ ë‚®ìŠµë‹ˆë‹¤."); // ìƒˆ ì˜ˆì™¸ë¥¼ ìƒì„±
 		}
 		else if(temperature > 35) {
-			throw new TempTooRowException("¿Âµµ°¡ ³Ê¹« ³ô½À´Ï´Ù."); // »õ ¿¹¿Ü¸¦ »ı¼º
+			throw new TempTooRowException("ì˜¨ë„ê°€ ë„ˆë¬´ ë†’ìŠµë‹ˆë‹¤."); // ìƒˆ ì˜ˆì™¸ë¥¼ ìƒì„±
 		}
 		
 	}

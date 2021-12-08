@@ -1,7 +1,7 @@
 package inheritance;
 
-public class Animal { // ºÎ¸ğ Å¬·¡½º : ½´ÆÛ Å¬·¡½º
+public class Animal { // ë¶€ëª¨ í´ë˜ìŠ¤ : ìŠˆí¼ í´ë˜ìŠ¤
 	public void eat() {
-		System.out.println("µ¿¹°Àº ¸Ô´Â´Ù...");
+		System.out.println("ë™ë¬¼ì€ ë¨¹ëŠ”ë‹¤...");
 	}
 }

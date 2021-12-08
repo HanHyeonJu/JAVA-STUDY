@@ -1,44 +1,44 @@
 package application;
 
-class Person{// ÇÏ³ªÀÇ ÆÄÀÏ¿¡ ¿©·¯°³ÀÇ Å¬·¡½º¸¦ ¸¸µé¼ö ÀÖ´Ù.
-	String name; // ÀÎ½ºÅÏ½º º¯¼ö : Å¬·¡½º¸¸ °¡Áö°í »ç¿ëÇÒ ¼ö ÀÖÀ½ , °´Ã¼°¡ »ý¼ºµÇ¾î¾ß »ç¿ë °¡´É
+class Person{// í•˜ë‚˜ì˜ íŒŒì¼ì— ì—¬ëŸ¬ê°œì˜ í´ëž˜ìŠ¤ë¥¼ ë§Œë“¤ìˆ˜ ìžˆë‹¤.
+	String name; // ì¸ìŠ¤í„´ìŠ¤ ë³€ìˆ˜ : í´ëž˜ìŠ¤ë§Œ ê°€ì§€ê³  ì‚¬ìš©í•  ìˆ˜ ìžˆìŒ , ê°ì²´ê°€ ìƒì„±ë˜ì–´ì•¼ ì‚¬ìš© ê°€ëŠ¥
 
 	@Override
 	public String toString() {
 		return "Person [name=" + name + "]";
-	} // ¿ä·¸°Ô ÇÏ¸é ÁÖ¼Ò ¾ÈÀÇ ¸®ÅÏµÈ °ªÀÌ ³ª¿È
+	} // ìš”ë ‡ê²Œ í•˜ë©´ ì£¼ì†Œ ì•ˆì˜ ë¦¬í„´ëœ ê°’ì´ ë‚˜ì˜´
 	
 }
 //public String toString() {
 //	String name;
-//} //¿ä·¸°Ô ÇÏ¸é ÁÖ¼Ò¸¸ ³ª¿È
+//} //ìš”ë ‡ê²Œ í•˜ë©´ ì£¼ì†Œë§Œ ë‚˜ì˜´
 
 
 
-public class ClassObject {// public class´Â ÇÑ ÆÄÀÏ¿¡ ÇÏ³ª¸¸ »ý¼º°¡´É, ÆÄÀÏÀÌ¸§°ú °°À½
-						  // ÇÁ·Î±×·¥ÀÌ ½ÇÇàµÇ´Â main method°¡ ÀÖ´Â Å¬·¡½º
+public class ClassObject {// public classëŠ” í•œ íŒŒì¼ì— í•˜ë‚˜ë§Œ ìƒì„±ê°€ëŠ¥, íŒŒì¼ì´ë¦„ê³¼ ê°™ìŒ
+						  // í”„ë¡œê·¸ëž¨ì´ ì‹¤í–‰ë˜ëŠ” main methodê°€ ìžˆëŠ” í´ëž˜ìŠ¤
 	
-	public static void main(String[] args) { // staticÀÌ ÀÖÀ¸¸é ¹«Á¶°Ç ¸Þ¸ð¸®¿¡ ¿Ã¶ó°¨, °ø¿ëÀÎ°¡ ¾Æ´Ñ°¡?
-		                                     // °´Ã¼°¡ ¿©·¯°³ÀÌ´Ù º¸´Ï ½ÃÀÛÁöÁ¡À» ¾Ë ¼ö°¡ ¾ø¾î¼­ ¸ÞÀÎÀÌ µÇ´Â °ÍÀ» ¸¸µé¾î µÐ´Ù.		
-		// Å¬·¡½º¿Í °´Ã¼
-		// Å¬·¡½º´Â ¼³°èµµ 
-		// ½ÇÁ¦ »ç¿ë°¡´ÉÇÑ °´Ã¼¸¦ »ý¼º °´Ã¼´Â ½ÇÁ¦ ¸Þ¸ð¸®¿¡ »ý¼ºµÊ(=ÀÎ½ºÅÏ½º)		// °´Ã¼´Â ³ÐÀº ÀÇ¹Ì ÀÎ½ºÅÏ½º´Â ´º·Î ÀÎÇØ ¸Þ¸ð¸®¿¡ »ý¼ºÀÌ µÈ °´Ã¼¸¦ ÀÇ¹Ì	
+	public static void main(String[] args) { // staticì´ ìžˆìœ¼ë©´ ë¬´ì¡°ê±´ ë©”ëª¨ë¦¬ì— ì˜¬ë¼ê°, ê³µìš©ì¸ê°€ ì•„ë‹Œê°€?
+		                                     // ê°ì²´ê°€ ì—¬ëŸ¬ê°œì´ë‹¤ ë³´ë‹ˆ ì‹œìž‘ì§€ì ì„ ì•Œ ìˆ˜ê°€ ì—†ì–´ì„œ ë©”ì¸ì´ ë˜ëŠ” ê²ƒì„ ë§Œë“¤ì–´ ë‘”ë‹¤.		
+		// í´ëž˜ìŠ¤ì™€ ê°ì²´
+		// í´ëž˜ìŠ¤ëŠ” ì„¤ê³„ë„ 
+		// ì‹¤ì œ ì‚¬ìš©ê°€ëŠ¥í•œ ê°ì²´ë¥¼ ìƒì„± ê°ì²´ëŠ” ì‹¤ì œ ë©”ëª¨ë¦¬ì— ìƒì„±ë¨(=ì¸ìŠ¤í„´ìŠ¤)		// ê°ì²´ëŠ” ë„“ì€ ì˜ë¯¸ ì¸ìŠ¤í„´ìŠ¤ëŠ” ë‰´ë¡œ ì¸í•´ ë©”ëª¨ë¦¬ì— ìƒì„±ì´ ëœ ê°ì²´ë¥¼ ì˜ë¯¸	
 		
-		Person p1; // ÂüÁ¶º¯¼ö(String º¯¼öÀÌ±â ¶§¹®¿¡) ÆÞ½¼ Å¬·¡½º Å¸ÀÔ p1 ¼±¾ð, ÃÊ±â°ª ¾øÀ½, Å¬·¡½º´Â ÃÊ±â°ªÀ» ³ÖÁö ¾Ê¾Æµµ ¹®ÀÚ¿­ÇüÀÌ¸é null, Á¤¼öÇüÀÌ¸é 0 À¸·Î ÃÊ±âÈ­µÈ´Ù.	
-		p1 = new Person(); // personÀÇ ½ÇÁ¦ °´Ã¼¸¦ »ý¼ºÇÏ¿© ±× ÁÖ¼Ò°ªÀ» p1¿¡ ´ëÀÔ
+		Person p1; // ì°¸ì¡°ë³€ìˆ˜(String ë³€ìˆ˜ì´ê¸° ë•Œë¬¸ì—) íŽ„ìŠ¨ í´ëž˜ìŠ¤ íƒ€ìž… p1 ì„ ì–¸, ì´ˆê¸°ê°’ ì—†ìŒ, í´ëž˜ìŠ¤ëŠ” ì´ˆê¸°ê°’ì„ ë„£ì§€ ì•Šì•„ë„ ë¬¸ìžì—´í˜•ì´ë©´ null, ì •ìˆ˜í˜•ì´ë©´ 0 ìœ¼ë¡œ ì´ˆê¸°í™”ëœë‹¤.	
+		p1 = new Person(); // personì˜ ì‹¤ì œ ê°ì²´ë¥¼ ìƒì„±í•˜ì—¬ ê·¸ ì£¼ì†Œê°’ì„ p1ì— ëŒ€ìž…
 		System.out.println(p1.toString());
 		System.out.println(p1);
-		p1.name = "Æë¼ö";
+		p1.name = "íŽ­ìˆ˜";
 		
 		Person p2 = new Person();
-		p2.name = "±æµ¿";
+		p2.name = "ê¸¸ë™";
 		Person p3 = new Person();
-		p3.name = "¶óÀÌ¿Â";
+		p3.name = "ë¼ì´ì˜¨";
 		
 		System.out.println(p1.name);
 		System.out.println(p2.name);
 		System.out.println(p3.name);
-		// ´Ù °°Àº Å¬·¡½º ¼³°èµµ¸¦ ÅëÇØ¼­ ¸¸µé¾îÁ³Áö¸¸ p1, p2, p3 ´Ù ´Ù¸¥ °´Ã¼µéÀÌ´Ù.
+		// ë‹¤ ê°™ì€ í´ëž˜ìŠ¤ ì„¤ê³„ë„ë¥¼ í†µí•´ì„œ ë§Œë“¤ì–´ì¡Œì§€ë§Œ p1, p2, p3 ë‹¤ ë‹¤ë¥¸ ê°ì²´ë“¤ì´ë‹¤.
 		
 	}
 

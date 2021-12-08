@@ -3,13 +3,13 @@ package inheritance;
 public class App {
 
 	public static void main(String[] args) {
-		// µ¿¹° Å¬·¡½º´Â ¸Ş¼Òµå eat()
+		// ë™ë¬¼ í´ë˜ìŠ¤ëŠ” ë©”ì†Œë“œ eat()
 		Animal animal = new Animal();
 		animal.eat();
 		
-		// »õ Å¬·¡½º´Â ¸Ş¼Òµå fly()
+		// ìƒˆ í´ë˜ìŠ¤ëŠ” ë©”ì†Œë“œ fly()
 		Bird bird = new Bird();
-		bird.eat(); // »ó¼Ó¹ŞÀº ¸Ş¼Òµå
+		bird.eat(); // ìƒì†ë°›ì€ ë©”ì†Œë“œ
 		bird.fly();
 
 	}

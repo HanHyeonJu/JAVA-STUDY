@@ -3,28 +3,28 @@ package application;
 public class BooleanAnd {
 
 	public static void main(String[] args) {
-		// A && B => A,B ¸ğµÎ ÂüÀÏ¶§¸¸ Âü
-		boolean isRaining = false; // ºñ°¡ ¿À´Â°¡? true true
-		boolean haveUmbrella = true; // ¿ì»êÀ» °¡Áö°í ÀÖ³ª? true false
+		// A && B => A,B ëª¨ë‘ ì°¸ì¼ë•Œë§Œ ì°¸
+		boolean isRaining = false; // ë¹„ê°€ ì˜¤ëŠ”ê°€? true true
+		boolean haveUmbrella = true; // ìš°ì‚°ì„ ê°€ì§€ê³  ìˆë‚˜? true false
 		
-		boolean takeUmbrella = false; // ¿ì»êÀ» ¾²³ª? true false
+		boolean takeUmbrella = false; // ìš°ì‚°ì„ ì“°ë‚˜? true false
 		
 		if(isRaining) {
 			if(haveUmbrella) {
 				takeUmbrella = true;
 			}
 		}
-		System.out.println("Ã¹¹øÂ° : "+ takeUmbrella);
+		System.out.println("ì²«ë²ˆì§¸ : "+ takeUmbrella);
 		
 		//2
 		if(isRaining && haveUmbrella) {
 			takeUmbrella = true;
 		}
-		System.out.println("µÎ¹øÂ° : "+takeUmbrella);
+		System.out.println("ë‘ë²ˆì§¸ : "+takeUmbrella);
 		
 		//3
 		takeUmbrella = isRaining && haveUmbrella ? true: false;
-		System.out.println("¼¼¹øÂ° : "+takeUmbrella);
+		System.out.println("ì„¸ë²ˆì§¸ : "+takeUmbrella);
 	}
 
 }

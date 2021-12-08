@@ -3,17 +3,17 @@ package application;
 public class PreAndPost {
 
 	public static void main(String[] args) {
-		// µÚ¿¡ ÀÖÀ»°æ¿ì ¸ÕÀú »ç¿ëÇÏ°í Áõ°¨, ¾Õ¿¡ ÀÖÀ» °æ¿ì ¸ÕÀú Áõ°¨ÇÏ°í »ç¿ë		
+		// ë’¤ì— ìˆì„ê²½ìš° ë¨¼ì € ì‚¬ìš©í•˜ê³  ì¦ê°, ì•ì— ìˆì„ ê²½ìš° ë¨¼ì € ì¦ê°í•˜ê³  ì‚¬ìš©		
 		int x = 5;
-		System.out.println(x++); // Ãâ·ÂÀÌ ¸ÕÀú : 5 ±× ´ÙÀ½ Áõ°¡½ÃÅ´
-		System.out.println(x); // Áõ°¡½ÃÅ² °ÍÀ» ÇÑ¸Å
+		System.out.println(x++); // ì¶œë ¥ì´ ë¨¼ì € : 5 ê·¸ ë‹¤ìŒ ì¦ê°€ì‹œí‚´
+		System.out.println(x); // ì¦ê°€ì‹œí‚¨ ê²ƒì„ í•œë§¤
 		
 		int y = 3;
 		System.out.println(++y);
 		
 		int z = 10;
 		
-		int sum = x +z++; // °è»ê ¸ÕÀú ÇÏ°í Áõ°¨
+		int sum = x +z++; // ê³„ì‚° ë¨¼ì € í•˜ê³  ì¦ê°
 		System.out.println(sum);
 		
 		int apples = 5;

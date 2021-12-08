@@ -8,18 +8,18 @@ public class App {
 
 	public static void main(String[] args) {
 		
-		Person p1 = new Person(); // person °´Ã¼ »ı¼º
+		Person p1 = new Person(); // person ê°ì²´ ìƒì„±
 		System.out.println(p1); 
 		
 		Person p2 = p1;
 		
 		System.out.println(p2);
 
-		test(p2); //static ¸Ş¼Òµå¶ó¼­ °´Ã¼¾øÀÌ ¹Ù·Î ¸Ş¼Òµå ½ÇÇà
+		test(p2); //static ë©”ì†Œë“œë¼ì„œ ê°ì²´ì—†ì´ ë°”ë¡œ ë©”ì†Œë“œ ì‹¤í–‰
 		
 	}
 	private static void test(Person p) {
-		System.out.println(p); // ¸Å°³º¯¼ö·Î ÀÔ·ÂµÈ pÀÇ ÁÖ¼Ò¸¦ Ãâ·Â
+		System.out.println(p); // ë§¤ê°œë³€ìˆ˜ë¡œ ì…ë ¥ëœ pì˜ ì£¼ì†Œë¥¼ ì¶œë ¥
 	}
 
 } // ?????????

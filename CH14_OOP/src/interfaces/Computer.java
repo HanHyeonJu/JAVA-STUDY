@@ -4,7 +4,7 @@ public class Computer implements Describable {
 
 	@Override
 	public String getDescription() {
-		return "ÄÄÇ»ÅÍÀÔ´Ï´Ù.";
+		return "ì»´í“¨í„°ì…ë‹ˆë‹¤.";
 	}
 
 }

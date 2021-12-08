@@ -1,20 +1,20 @@
 package game.objects;
 
 public class GameObject {
-	private int id; // ¾ÆÀÌµğ
-	private String name; //ÀÌ¸§
+	private int id; // ì•„ì´ë””
+	private String name; //ì´ë¦„
 	private int[][] comparison = {
-			/*°¡À§(0)*/		{0,-1,1}, //ºñ±è, Áü, ÀÌ±è
-		    /*¹ÙÀ§(1)*/	    {1,0,-1},
-		    /*º¸(2)*/		{-1,1,0},
-			}; // ½Â¸® ÆĞ¹è ºñ±è ÀÌÁß¹è¿­
-	// »ó´ëÀÇ °¡À§, ¹ÙÀ§, º¸¿Í ºñ±³ÇØ¼­ °á°ú ¸®ÅÏ
+			/*ê°€ìœ„(0)*/		{0,-1,1}, //ë¹„ê¹€, ì§, ì´ê¹€
+		    /*ë°”ìœ„(1)*/	    {1,0,-1},
+		    /*ë³´(2)*/		{-1,1,0},
+			}; // ìŠ¹ë¦¬ íŒ¨ë°° ë¹„ê¹€ ì´ì¤‘ë°°ì—´
+	// ìƒëŒ€ì˜ ê°€ìœ„, ë°”ìœ„, ë³´ì™€ ë¹„êµí•´ì„œ ê²°ê³¼ ë¦¬í„´
 	public int compareTo(GameObject ob) {
 		return comparison[id][ob.id];
 	}
 	
 	
-	protected int getId() {// ¾ÆÀÌµğ ¼öÁ¤Àº »ó¼ÓÇÑ Å¬·¡½º¿¡¼­¸¸ »ç¿ë
+	protected int getId() {// ì•„ì´ë”” ìˆ˜ì •ì€ ìƒì†í•œ í´ë˜ìŠ¤ì—ì„œë§Œ ì‚¬ìš©
 		return id;
 	}
 	protected void setId(int id) {
@@ -28,7 +28,7 @@ public class GameObject {
 	}
 	
 	
-	@Override // ¿ø·¡ objectÀÇ tostring¸Ş¼Òµå´Â ÁÖ¼Ò°ªÀ» ³ªÅ¸³»´Âµ¥ ¸Ş¼Òµå ¿À¹ö¶óÀÌµå¸¦ ÇØ¼­ ÁÖ¼Ò ¾ÈÀÇ °ªÀÌ ³ªÅ¸³²
+	@Override // ì›ë˜ objectì˜ tostringë©”ì†Œë“œëŠ” ì£¼ì†Œê°’ì„ ë‚˜íƒ€ë‚´ëŠ”ë° ë©”ì†Œë“œ ì˜¤ë²„ë¼ì´ë“œë¥¼ í•´ì„œ ì£¼ì†Œ ì•ˆì˜ ê°’ì´ ë‚˜íƒ€ë‚¨
 	public String toString() {
 		return "GameObject [id=" + id + ", name=" + name + "]";
 	}

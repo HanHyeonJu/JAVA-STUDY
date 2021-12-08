@@ -3,13 +3,13 @@ package Casting;
 public class App {
 
 	public static void main(String[] args) {
-		//Ä³½ºÆÃ ½Ç½À
-		Cat cat1 = new HouseCat(); // ¾÷Ä³½ºÆÃ
+		//ìºìŠ¤íŒ… ì‹¤ìŠµ
+		Cat cat1 = new HouseCat(); // ì—…ìºìŠ¤íŒ…
 		cat1.vocal();
 		cat1.hunt();
-		//cat1.call(); cat1Àº Cat Å¬·¡½º Å¸ÀÔÀÌ±â ¶§¹®¿¡ Cat¿¡ ¾ø´Â ¸Ş¼Òµå »ç¿ëºÒ°¡, ¿À¹ö¶óÀÌµùÀº °¡´É
+		//cat1.call(); cat1ì€ Cat í´ë˜ìŠ¤ íƒ€ì…ì´ê¸° ë•Œë¬¸ì— Catì— ì—†ëŠ” ë©”ì†Œë“œ ì‚¬ìš©ë¶ˆê°€, ì˜¤ë²„ë¼ì´ë”©ì€ ê°€ëŠ¥
 		
-		//´Ù¿î Ä³½ºÆÃ
+		//ë‹¤ìš´ ìºìŠ¤íŒ…
 		HouseCat cat2 = (HouseCat)cat1; 
 		cat2.call();
 	}		

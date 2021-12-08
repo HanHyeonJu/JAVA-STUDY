@@ -6,38 +6,38 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 
-class Task1 extends TimerTask{ // Ãß»óÅ¬·¡½º¸¦ »ó¼Ó¹ŞÀ½
+class Task1 extends TimerTask{ // ì¶”ìƒí´ë˜ìŠ¤ë¥¼ ìƒì†ë°›ìŒ
 
 	@Override
 	public void run() {
-		System.out.println("Å¸ÀÌ¸Ó1 Çï·ç¿ì!");
+		System.out.println("íƒ€ì´ë¨¸1 í—¬ë£¨ìš°!");
 	}
 	
 }
 
-class Task2 implements Runnable{ // ÀÎÅÍÆäÀÌ½º¸¦ ±¸Çö(?)
+class Task2 implements Runnable{ // ì¸í„°í˜ì´ìŠ¤ë¥¼ êµ¬í˜„(?)
 
 	@Override
-	public void run() {// RunnableÀÇ Ãß»ó¸Ş¼Òµå¸¦ ±¸Çö(¿Ï¼º)ÇÑ´Ù.
-		// ÇÒÀÏÀÇ ÄÚµå¸¦ Àû´Â´Ù.
-		System.out.println("Å¸ÀÌ¸Ó2 ÇÏÀÌ!");
+	public void run() {// Runnableì˜ ì¶”ìƒë©”ì†Œë“œë¥¼ êµ¬í˜„(ì™„ì„±)í•œë‹¤.
+		// í• ì¼ì˜ ì½”ë“œë¥¼ ì ëŠ”ë‹¤.
+		System.out.println("íƒ€ì´ë¨¸2 í•˜ì´!");
 	}
 	
-}// ¹İº¹ÇÒ ½ÇÇà¹®
+}// ë°˜ë³µí•  ì‹¤í–‰ë¬¸
 
 
 
 public class App {
 
 	public static void main(String[] args) {
-		// Å¸ÀÌ¸Ó1
+		// íƒ€ì´ë¨¸1
 		Timer timer = new Timer();
 		timer.scheduleAtFixedRate(new Task1(), 0L, 1000L);
 		
-		// Å¸ÀÌ¸Ó2
+		// íƒ€ì´ë¨¸2
 		ScheduledExecutorService executor = Executors.newScheduledThreadPool(1);
 		
-		executor.scheduleAtFixedRate(new Task2(), 0, 1, TimeUnit.SECONDS); // 1ÃÊ¿¡ ÇÑ ¹ø¾¿ ¹İº¹
+		executor.scheduleAtFixedRate(new Task2(), 0, 1, TimeUnit.SECONDS); // 1ì´ˆì— í•œ ë²ˆì”© ë°˜ë³µ
 	}
 
 }

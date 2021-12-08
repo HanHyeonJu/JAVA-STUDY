@@ -3,11 +3,11 @@ package application;
 public class NewArray {
 
 	public static void main(String[] args) {
-		// new Å°¿öµå·Î ¹è¿­ »ı¼º
-		// int[] numbers = {}; ÃÊ±â°ªÀ» ¹Ù·Î ³Ö´Â ¹ı ¸®ÅÍ·²ÀÌ¶ó°í ÇÔ
-		int[] numbers = new int[3]; // Á¤¼öÇü 3°³ÀÇ ¹è¿­
-		//int[] numbers; - Á¤¼öÇü ¹è¿­ ¼±¾ğ
-		//numbers = new int[3]; - ½ÇÁ¦ Á¤¼öÇü 3°³ÀÇ ¹è¿­À» ¸¸µë
+		// new í‚¤ì›Œë“œë¡œ ë°°ì—´ ìƒì„±
+		// int[] numbers = {}; ì´ˆê¸°ê°’ì„ ë°”ë¡œ ë„£ëŠ” ë²• ë¦¬í„°ëŸ´ì´ë¼ê³  í•¨
+		int[] numbers = new int[3]; // ì •ìˆ˜í˜• 3ê°œì˜ ë°°ì—´
+		//int[] numbers; - ì •ìˆ˜í˜• ë°°ì—´ ì„ ì–¸
+		//numbers = new int[3]; - ì‹¤ì œ ì •ìˆ˜í˜• 3ê°œì˜ ë°°ì—´ì„ ë§Œë“¬
 		
 		numbers[0] =99;
 		numbers[1] =999;
@@ -20,7 +20,7 @@ public class NewArray {
 			total = total + numbers[i];
 		}
 
-		System.out.println("ÃÑ ÇÕ°è´Â : "+total);
+		System.out.println("ì´ í•©ê³„ëŠ” : "+total);
 	}
 
 }

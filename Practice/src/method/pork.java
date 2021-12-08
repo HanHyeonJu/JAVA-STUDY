@@ -3,10 +3,10 @@ package method;
 public class pork {
 
 	public static void main(String[] args) {
-		/*»ï°ã»ì 1ÀÎ¹® ¹«°Ô 180g, 1g´ç Ä®·Î¸® 5.179kcal, 3ÀÎºĞÀ» ¼Ò¼öÁ¡ µÑÂ° ÀÚ¸®±îÁö Ãâ·Â*/
-		int n = 3; // »ï°ã»ìÀÇ ¾ç
-		double x = calculate(n); // ÃÑ Ä®·Î¸®
-		System.out.printf("»ï°ã»ì %dÀÎºĞ: %.2f kcal", n, x);
+		/*ì‚¼ê²¹ì‚´ 1ì¸ë¬¸ ë¬´ê²Œ 180g, 1gë‹¹ ì¹¼ë¡œë¦¬ 5.179kcal, 3ì¸ë¶„ì„ ì†Œìˆ˜ì  ë‘˜ì§¸ ìë¦¬ê¹Œì§€ ì¶œë ¥*/
+		int n = 3; // ì‚¼ê²¹ì‚´ì˜ ì–‘
+		double x = calculate(n); // ì´ ì¹¼ë¡œë¦¬
+		System.out.printf("ì‚¼ê²¹ì‚´ %dì¸ë¶„: %.2f kcal", n, x);
 	}
 	
 	public static double calculate(int amount) {

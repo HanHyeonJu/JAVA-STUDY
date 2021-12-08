@@ -4,15 +4,15 @@ public class Person {
 	private String name;
 	private double height;
 	
-	// »ı¼ºÀÚ ¸Ş¼Òµå : public + Å¬·¡½º¸í(), ¸®ÅÏÅ¸ÀÔ¾øÀ½
-	// public person(){} - ±âº»»ı¼ºÀÚ
+	// ìƒì„±ì ë©”ì†Œë“œ : public + í´ë˜ìŠ¤ëª…(), ë¦¬í„´íƒ€ì…ì—†ìŒ
+	// public person(){} - ê¸°ë³¸ìƒì„±ì
 	public Person() {
-		name = "ÀÍ¸í";
+		name = "ìµëª…";
 		height = 170;
-		System.out.println("ÇÑ »ç¶÷À» »ı¼º!");
+		System.out.println("í•œ ì‚¬ëŒì„ ìƒì„±!");
 	}
 	
-	// get set ¸Ş¼Òµå
+	// get set ë©”ì†Œë“œ
 	
 	public String getName() {
 		return name;

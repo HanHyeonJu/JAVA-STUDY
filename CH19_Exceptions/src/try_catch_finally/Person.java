@@ -1,11 +1,11 @@
 package try_catch_finally;
 
 public class Person {
-	public void setName(String name) throws Exception { // ÀÌ¸§À» ÀÔ·ÂÇÏ´Â ¸Ş¼­µå
+	public void setName(String name) throws Exception { // ì´ë¦„ì„ ì…ë ¥í•˜ëŠ” ë©”ì„œë“œ
 		if(name == null) {
-			throw new Exception("ÀÌ¸§¿¡ ³Î°ªÀ» ÀÔ·ÂÇÒ ¼ö ¾ø½À´Ï´Ù.");
+			throw new Exception("ì´ë¦„ì— ë„ê°’ì„ ì…ë ¥í•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤.");
 		}
 		
-		System.out.println("ÀÌ¸§Àº "+name);
+		System.out.println("ì´ë¦„ì€ "+name);
 	}
 }

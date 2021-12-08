@@ -3,9 +3,9 @@ package application;
 public class While {
 
 	public static void main(String[] args) {
-		// While ¹Ýº¹¹®
+		// While ë°˜ë³µë¬¸
 		while(true) {
-			System.out.println("Çï·Î¿ì ¿ùµå!");
+			System.out.println("í—¬ë¡œìš° ì›”ë“œ!");
 		}
 	}
 

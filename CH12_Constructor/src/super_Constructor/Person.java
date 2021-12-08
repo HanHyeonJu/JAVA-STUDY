@@ -4,7 +4,7 @@ public class Person {
 	private String name;
 	
 	public Person(String name) {
-		System.out.println("person »ı¼ºÀÚ");
+		System.out.println("person ìƒì„±ì");
 		this.name = name;
 	}
 	

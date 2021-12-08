@@ -1,7 +1,7 @@
  package inheritance;
 
-public class Bird extends Animal{ // ÀÚ½Ä Å¬·¡½º´Â ºÎ¸ğÅ¬·¡½º¸¦ »ó¼ÓÇÑ´Ù. Bird¶ó´Â Å¬·¡½º º¯¼ö¿Í extends @@@°°Àº ¸Ş¼Òµå¸¦ µ¿½Ã »ç¿ë
+public class Bird extends Animal{ // ìì‹ í´ë˜ìŠ¤ëŠ” ë¶€ëª¨í´ë˜ìŠ¤ë¥¼ ìƒì†í•œë‹¤. Birdë¼ëŠ” í´ë˜ìŠ¤ ë³€ìˆ˜ì™€ extends @@@ê°™ì€ ë©”ì†Œë“œë¥¼ ë™ì‹œ ì‚¬ìš©
 	public void fly() {
-		System.out.println("ÇÏ´ÃÀ» ³­´Ù...");
+		System.out.println("í•˜ëŠ˜ì„ ë‚œë‹¤...");
 	}
 }

@@ -5,28 +5,28 @@ import java.util.Scanner;
 public class Switch2 {
 
 	public static void main(String[] args) {
-		// Switch¹® ¹®ÀÚ¿­ ÀÔ·Â
+		// Switchë¬¸ ë¬¸ìì—´ ì…ë ¥
 		Scanner scanner =new Scanner(System.in); 
 		
-		System.out.print("°è¼Ó ÁøÇàÇÏ°Ú½À´Ï±î? (y/n): ");
+		System.out.print("ê³„ì† ì§„í–‰í•˜ê² ìŠµë‹ˆê¹Œ? (y/n): ");
 		
-		String input = scanner.nextLine(); // ¹®ÀÚ¿­ ÀÔ·Â½Ã next.line()
+		String input = scanner.nextLine(); // ë¬¸ìì—´ ì…ë ¥ì‹œ next.line()
 		scanner.close();
 		
 		switch(input) {
 		case "y": 
-			System.out.println("°è¼Ó ÁøÇàÇÕ´Ï´Ù."); 
+			System.out.println("ê³„ì† ì§„í–‰í•©ë‹ˆë‹¤."); 
 			break; 
 			
 		case "n": 
-			System.out.println("Á¾·áÇÕ´Ï´Ù.");
+			System.out.println("ì¢…ë£Œí•©ë‹ˆë‹¤.");
 			break; 
 						
-		default: // else¿Í °°À½ À§ÀÇ ÄÉÀÌ½º¿¡ ¸Â´Â °ÍÀÌ ¾øÀ» ¶§ ½ÇÇà
-			System.out.println("Àß¸øµÈ ÀÔ·ÂÀÔ´Ï´Ù.");
+		default: // elseì™€ ê°™ìŒ ìœ„ì˜ ì¼€ì´ìŠ¤ì— ë§ëŠ” ê²ƒì´ ì—†ì„ ë•Œ ì‹¤í–‰
+			System.out.println("ì˜ëª»ëœ ì…ë ¥ì…ë‹ˆë‹¤.");
 			break;
 		}
-// break°¡ ¾øÀ¸¸é Á¶°Ç¿¡ ¸ÂÁö ¾Ê´Â ºÎºĞ±îÁöµµ ½ÇÇà µÊ
+// breakê°€ ì—†ìœ¼ë©´ ì¡°ê±´ì— ë§ì§€ ì•ŠëŠ” ë¶€ë¶„ê¹Œì§€ë„ ì‹¤í–‰ ë¨
 	}
 
 }

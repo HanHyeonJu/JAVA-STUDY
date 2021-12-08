@@ -3,18 +3,18 @@ package getterSetter;
 public class App {
 
 	public static void main(String[] args) {
-		// ÀÎ½ºÅÏ½º º¯¼ö¿¡ Á¢±ÙÇÏ´Â get°ú set
+		// ì¸ìŠ¤í„´ìŠ¤ ë³€ìˆ˜ì— ì ‘ê·¼í•˜ëŠ” getê³¼ set
 		Person p1 = new Person();
-		// º¸¾È»ó °´Ã¼ÀÇ º¯¼ö¿¡ ¹Ù·Î Á¢±ÙÇÏÁö ¸øÇÔ - ÇÏ³ªÀÇ ÇÁ·Î±×·¡¹Ö ±ÔÄ¢
-		// p1.name = "Æë¼ö";
-		p1.setName("Æë¼ö");
+		// ë³´ì•ˆìƒ ê°ì²´ì˜ ë³€ìˆ˜ì— ë°”ë¡œ ì ‘ê·¼í•˜ì§€ ëª»í•¨ - í•˜ë‚˜ì˜ í”„ë¡œê·¸ë˜ë° ê·œì¹™
+		// p1.name = "í­ìˆ˜";
+		p1.setName("í­ìˆ˜");
 		System.out.println(p1.getName());
 		p1.setage(7);
 		System.out.println(p1.getage());
 		
 		Person p2 = new Person();
 		
-		p2.setName("±æµ¿");
+		p2.setName("ê¸¸ë™");
 		System.out.println(p2.getName());
 		p2.setage(17);
 		System.out.println(p2.getage());

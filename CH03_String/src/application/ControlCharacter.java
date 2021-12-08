@@ -3,15 +3,15 @@ package application;
 public class ControlCharacter {
 
 	public static void main(String[] args) {
-		// Á¦¾î ¹®ÀÚ : \n \t
+		// ì œì–´ ë¬¸ì : \n \t
 		System.out.println("============================");
-		System.out.println("\tÅÇ\tÅÇ¸¸Å­ ¶Ù¿ó´Ï´Ù.");
+		System.out.println("\tíƒ­\tíƒ­ë§Œí¼ ë›°ì›ë‹ˆë‹¤.");
 		System.out.println("============================");
-		System.out.println("ÀÚ¹Ù¸¦\n¹è¿ì°í\nÀÖ½À´Ï´Ù.");
+		System.out.println("ìë°”ë¥¼\në°°ìš°ê³ \nìˆìŠµë‹ˆë‹¤.");
 		
-		System.out.print("ÀÌ°ÍÀº"); // print´Â °ø¹éÀÌ ¾ø´Ù.
-		System.out.print("ÁÙÀ»");
-		System.out.print("¾È³»¸³´Ï´Ù.");
+		System.out.print("ì´ê²ƒì€"); // printëŠ” ê³µë°±ì´ ì—†ë‹¤.
+		System.out.print("ì¤„ì„");
+		System.out.print("ì•ˆë‚´ë¦½ë‹ˆë‹¤.");
 
 	}
 

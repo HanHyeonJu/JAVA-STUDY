@@ -1,11 +1,11 @@
 package enum_Constructor;
 
-public enum Fruit { // Å°¿öµå¿¡ µû¶ó class°¡ µÇ°í enumÀÌ µÈ´Ù.
-	APPLE("ÃÊ·Ï»ö"), BANANA("³ë¶õ»ö"), ORANGE("¿À·»Áö»ö"); // »ó¼öµéÀÇ ÁıÇÕ
+public enum Fruit { // í‚¤ì›Œë“œì— ë”°ë¼ classê°€ ë˜ê³  enumì´ ëœë‹¤.
+	APPLE("ì´ˆë¡ìƒ‰"), BANANA("ë…¸ë€ìƒ‰"), ORANGE("ì˜¤ë Œì§€ìƒ‰"); // ìƒìˆ˜ë“¤ì˜ ì§‘í•©
 	
 	private String color;
 	
-	Fruit(String color) { // enumÀÇ »ı¼ºÀÚ
+	Fruit(String color) { // enumì˜ ìƒì„±ì
 		this.color = color; 
 	}
 	

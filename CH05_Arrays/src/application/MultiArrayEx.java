@@ -3,7 +3,7 @@ package application;
 public class MultiArrayEx {
 
 	public static void main(String[] args) {
-		// ÀÌÁß ¹è¿­ ¿¹Á¦ ¸ğµç Á¤¼öÀÇ °ªÀÇ ÇÕ°è¸¦ ±¸ÇÏ¶ó.
+		// ì´ì¤‘ ë°°ì—´ ì˜ˆì œ ëª¨ë“  ì •ìˆ˜ì˜ ê°’ì˜ í•©ê³„ë¥¼ êµ¬í•˜ë¼.
 		
 		int[][] values = {
 				{1,5,7},
@@ -19,7 +19,7 @@ public class MultiArrayEx {
 				total = total + inArray[j];
 			}	
 		}
-		System.out.println("ÃÑÇÕÀº : " +total);
+		System.out.println("ì´í•©ì€ : " +total);
 		
 		/* for(int i = 0; i < values.length; i++) {
 		

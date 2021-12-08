@@ -14,7 +14,7 @@ class Task1 extends TimerTask{
 	@Override
 	public void run() {
 		i++;
-		System.out.println("°è¶õ »î´Â Áß"+ i);
+		System.out.println("ê³„ë€ ì‚¶ëŠ” ì¤‘"+ i);
 	}	
 }
 
@@ -22,7 +22,7 @@ class Task2 implements Runnable{
 
 	@Override
 	public void run() {
-		JOptionPane.showMessageDialog(null, "°è¶õ »î±â ¿Ï·á");
+		JOptionPane.showMessageDialog(null, "ê³„ë€ ì‚¶ê¸° ì™„ë£Œ");
 	}
 	
 }
@@ -30,17 +30,17 @@ class Task2 implements Runnable{
 public class App {
 
 	public static void main(String[] args) {
-		// 1. 5ÃÊ °£°İ Å¸ÀÌ¸Ó "°è¶õ »î´Â Áß"
-		// 2. 30ÃÊ °£°İ Å¸ÀÌ¸Ó "°è¶õ »î±â ¿Ï·á"
-		// Å¸ÀÌ¸Ó1
+		// 1. 5ì´ˆ ê°„ê²© íƒ€ì´ë¨¸ "ê³„ë€ ì‚¶ëŠ” ì¤‘"
+		// 2. 30ì´ˆ ê°„ê²© íƒ€ì´ë¨¸ "ê³„ë€ ì‚¶ê¸° ì™„ë£Œ"
+		// íƒ€ì´ë¨¸1
 		Timer timer = new Timer();
-		timer.scheduleAtFixedRate(new Task1(), 5000, 5000); // 5ÃÊ¿¡ ÇÑ ¹ø¾¿
+		timer.scheduleAtFixedRate(new Task1(), 5000, 5000); // 5ì´ˆì— í•œ ë²ˆì”©
 		
 		
 		
-		//Å¸ÀÌ¸Ó2
+		//íƒ€ì´ë¨¸2
 		ScheduledExecutorService executor = Executors.newScheduledThreadPool(1);
-		executor.scheduleAtFixedRate(new Task2(), 30, 30, TimeUnit.SECONDS); // 30ÃÊ¿¡ ÇÑ ¹ø¾¿
+		executor.scheduleAtFixedRate(new Task2(), 30, 30, TimeUnit.SECONDS); // 30ì´ˆì— í•œ ë²ˆì”©
 		
 	}
 

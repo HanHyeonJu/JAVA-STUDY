@@ -3,13 +3,13 @@ package overridingMethod;
 public class App {
 
 	public static void main(String[] args) {
-		// ¸Ş¼Òµå ¿À¹ö¶óÀÌµù		
+		// ë©”ì†Œë“œ ì˜¤ë²„ë¼ì´ë”©		
 		Cat cat1 = new Cat();
 		cat1.vocal();
 		
 		HouseCat cat2 = new HouseCat();
-		cat2.vocal(); // µ¤¾î¾´ ¸Ş¼Òµå
-		cat2.hunt(); // »ó¼Ó¹ŞÀº ¸Ş¼Òµå
+		cat2.vocal(); // ë®ì–´ì“´ ë©”ì†Œë“œ
+		cat2.hunt(); // ìƒì†ë°›ì€ ë©”ì†Œë“œ
 		
 		RoadCat cat3 = new RoadCat();
 		cat3.vocal();

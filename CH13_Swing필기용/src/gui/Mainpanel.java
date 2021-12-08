@@ -5,7 +5,7 @@ import javax.swing.JPanel;
 
 public class Mainpanel extends JPanel {
 	private static final long serialVersionUID = 1L;
-    // ¸ŞÀÎÆĞ³Î Å¬·¡½º´Â JPanelÀ» »ó¼ÓÇß°í »ı¼º½Ã »¡°£»öÀ¸·Î ¼³Á¤
+    // ë©”ì¸íŒ¨ë„ í´ë˜ìŠ¤ëŠ” JPanelì„ ìƒì†í–ˆê³  ìƒì„±ì‹œ ë¹¨ê°„ìƒ‰ìœ¼ë¡œ ì„¤ì •
 	public Mainpanel() {
 		setBackground(Color.RED);
 	}

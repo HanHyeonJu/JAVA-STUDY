@@ -6,8 +6,8 @@ public class Person {
 	private int age;
 	
 	public Person() {
-		//this()´Â »ı¼ºÀÚ
-		this("ÀÍ¸í", 0);
+		//this()ëŠ” ìƒì„±ì
+		this("ìµëª…", 0);
 	}
 	
 	public Person(String name) {
@@ -21,7 +21,7 @@ public class Person {
 	}
 
 	@Override
-	public String toString() {//  °´Ã¼¿¡ Á¤º¸¸¦ ÀÔ·Â
+	public String toString() {//  ê°ì²´ì— ì •ë³´ë¥¼ ì…ë ¥
 		return "Person [name=" + name + ", age=" + age + "]";
 	}
 	

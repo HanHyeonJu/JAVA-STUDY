@@ -6,7 +6,7 @@ public class Student {
 	private boolean isVisible;
 	private double temperature;
 	
-	// »ı¼ºÀÚ
+	// ìƒì„±ì
 	public Student(String name, int age) {
 		isVisible = true;
 		temperature = 0;
@@ -42,7 +42,7 @@ public class Student {
 
 	// toString
 	public String toString() {
-		return "ÇĞ»ı [ÀÌ¸§=" + name + ", ³ªÀÌ=" + age + ", ÁıÃ¼=" + isVisible + ", ¿Âµµ=" + temperature
+		return "í•™ìƒ [ì´ë¦„=" + name + ", ë‚˜ì´=" + age + ", ì§‘ì²´=" + isVisible + ", ì˜¨ë„=" + temperature
 				+ "]";
 	}
 	

@@ -6,15 +6,15 @@ public class App {
 		Person p1 = new Person();
 		
 		try {
-			p1.setName("ÄÚÄÚ"); // ¿¹¿Ü ¹ß»ı½Ã ¿©±â´Â ½ÇÇà ¾ÈµÊ
+			p1.setName("ì½”ì½”"); // ì˜ˆì™¸ ë°œìƒì‹œ ì—¬ê¸°ëŠ” ì‹¤í–‰ ì•ˆë¨
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
 		} finally {
-			//¿©±â´Â ¿¹¿Ü°¡ ¹ß»ıÇÏµç ¾ÈÇÏµç ¹«Á¶°Ç ½ÇÇàµÊ
-			System.out.println("final ¹«Á¶°Ç ½ÇÇà");
+			//ì—¬ê¸°ëŠ” ì˜ˆì™¸ê°€ ë°œìƒí•˜ë“  ì•ˆí•˜ë“  ë¬´ì¡°ê±´ ì‹¤í–‰ë¨
+			System.out.println("final ë¬´ì¡°ê±´ ì‹¤í–‰");
 		}
 		
-		System.out.println("ÇÁ·Î±×·¥ Á¾·á");
+		System.out.println("í”„ë¡œê·¸ë¨ ì¢…ë£Œ");
 
 	}
 

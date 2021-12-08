@@ -3,20 +3,20 @@ package integervariable;
 public class PrintOutput {
 
 	public static void main(String[] args) {
-		// ¹®ÀÚ¿­ + ¼ıÀÚ => ¹®ÀÚ¿­
+		// ë¬¸ìì—´ + ìˆ«ì => ë¬¸ìì—´
 		int x = 5;
 		int y = 7;
 		int z = x + y;
 		
-		System.out.println("x+yÀÇ °ªÀº : " +z);
+		System.out.println("x+yì˜ ê°’ì€ : " +z);
 		
-		String s = "x+yÀÇ °ªÀº : " +z;
+		String s = "x+yì˜ ê°’ì€ : " +z;
 		System.out.println(s);
 		
 		double a = 3.14;
 		double b = 2.16;
 //		int k = a + b;
-//		´Ù¸¥ Å¸ÀÔÀ» ´õÇØ¼­ ÀÔ·ÂÇÒ ¼ö ¾ø´Ù.
+//		ë‹¤ë¥¸ íƒ€ì…ì„ ë”í•´ì„œ ì…ë ¥í•  ìˆ˜ ì—†ë‹¤.
 		double c = a + b;
 		System.out.println(c);
 	}

@@ -5,30 +5,30 @@ import java.util.Scanner;
 public class DoWhile {
 
 	public static void main(String[] args) {
-		// do whileÀº Ã³À½ ÇÑ¹øÀº Á¶°Ç°ú »ó°ü¾øÀÌ ½ÇÇàµÊ
+		// do whileì€ ì²˜ìŒ í•œë²ˆì€ ì¡°ê±´ê³¼ ìƒê´€ì—†ì´ ì‹¤í–‰ë¨
 		/*
 		int count = 0;
-		System.out.println("do while ¹İº¹¹®");
+		System.out.println("do while ë°˜ë³µë¬¸");
 		
 		do {
 			System.out.println("Count: "+count);
-		}while( count++ < 5); // ºñ±³ÇÑ ´ÙÀ½¿¡ Áõ°¡ÇÏ±â ¶§¹®¿¡ 5±îÁö Ãâ·Â
+		}while( count++ < 5); // ë¹„êµí•œ ë‹¤ìŒì— ì¦ê°€í•˜ê¸° ë•Œë¬¸ì— 5ê¹Œì§€ ì¶œë ¥
 	    */
 		
 		final String USER_PASSWORD = "hello";
 		
 		Scanner scanner =new Scanner(System.in); 
 		
-		String password = ""; // ¹®ÀÚ¿­ ¼±¾ğ°ú ÃÊ±â°ªÀ» °ø¹éÀ¸·Î µÒ(null)
+		String password = ""; // ë¬¸ìì—´ ì„ ì–¸ê³¼ ì´ˆê¸°ê°’ì„ ê³µë°±ìœ¼ë¡œ ë‘ (null)
 		
 		do {
 			
-			System.out.println("ºñ¹øÀ» ÀÔ·Â > ");
+			System.out.println("ë¹„ë²ˆì„ ì…ë ¥ > ");
 			password = scanner.nextLine();
 			
-		}while(!password.equals(USER_PASSWORD)); // true ¶Ç´Â falseÀÇ ¹İ´ë°ª
+		}while(!password.equals(USER_PASSWORD)); // true ë˜ëŠ” falseì˜ ë°˜ëŒ€ê°’
 		scanner.close();
-		System.out.println("Á¢¼Û ½ÂÀÎ.");
+		System.out.println("ì ‘ì†¡ ìŠ¹ì¸.");
 	}
 
 }

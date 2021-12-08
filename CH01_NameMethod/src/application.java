@@ -3,9 +3,9 @@ public class application {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.out.println("¾È³çÇÏ¼¼¿ä");
-		System.out.println("»õ ÀÚ¹Ù ÇÁ·Î±×·¥À»");
-		System.out.println("½ÇÇàÇÕ´Ï´Ù.");
+		System.out.println("ì•ˆë…•í•˜ì„¸ìš”");
+		System.out.println("ìƒˆ ìë°” í”„ë¡œê·¸ë¨ì„");
+		System.out.println("ì‹¤í–‰í•©ë‹ˆë‹¤.");
 	}
 
 }

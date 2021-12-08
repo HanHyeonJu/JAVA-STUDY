@@ -1,7 +1,7 @@
 package exam1;
 
 public class Menu {
-	String[] options = {"¾ÆÀÌÅÛ º¸±â","¾ÆÀÌÅÛ Ãß°¡","¾ÆÀÌÅÛ »èÁ¦","Á¾·á"};
+	String[] options = {"ì•„ì´í…œ ë³´ê¸°","ì•„ì´í…œ ì¶”ê°€","ì•„ì´í…œ ì‚­ì œ","ì¢…ë£Œ"};
 	
 	void display() {
 		for(int i =0; i < options.length; i++) {

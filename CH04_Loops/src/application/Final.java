@@ -3,9 +3,9 @@ package application;
 public class Final {
 
 	public static void main(String[] args) {
-		// º¯¼ö ¾Õ¿¡ finalÀÌ ºÙÀ¸¸é »ó¼ö(º¯ÇÏÁö ¾Ê´Â °ª)
-		final int VALUE = 9; // »ó¼ö´Â ´ë¹®ÀÚ·Î Àû´Â°Ô ÁÁÀ½
-//		VALUE = 11; »ó¼ö´Â °ªÀ» ´ëÀÔÇÒ ¼ö ¾ø´Ù.
+		// ë³€ìˆ˜ ì•ì— finalì´ ë¶™ìœ¼ë©´ ìƒìˆ˜(ë³€í•˜ì§€ ì•ŠëŠ” ê°’)
+		final int VALUE = 9; // ìƒìˆ˜ëŠ” ëŒ€ë¬¸ìë¡œ ì ëŠ”ê²Œ ì¢‹ìŒ
+//		VALUE = 11; ìƒìˆ˜ëŠ” ê°’ì„ ëŒ€ì…í•  ìˆ˜ ì—†ë‹¤.
 		
 		System.out.println(VALUE);
 		

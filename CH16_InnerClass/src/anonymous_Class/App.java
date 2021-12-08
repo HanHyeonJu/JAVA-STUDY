@@ -1,18 +1,18 @@
-package anonymous_Class; // Áß¿ä!
+package anonymous_Class; // ì¤‘ìš”!
 
 public class App {
 	
-	private String name = "Æë¼ö";
+	private String name = "í­ìˆ˜";
 	
 	public static void main(String[] args) {
-		// ÀÍ¸íÅ¬·¡½º´Â ÀÌ¸§¾ø´Â Å¬·¡½º
+		// ìµëª…í´ë˜ìŠ¤ëŠ” ì´ë¦„ì—†ëŠ” í´ë˜ìŠ¤
 		new App().start(); 
 	}
 	
 	private void start() {
-//		System.out.println("Æë¼ö");
-		// Runnable ÀÎÅÍÆäÀÌ½º´Â °´Ã¼¸¦ ¸¸µé ¼ö ¾øÁö¸¸ ÀÍ¸íÅ¬·¡½º¸¦ ¹Ù·Î ¸¸µé¾î Ãß»ó¸Ş¼Òµå¸¦ ±¸ÇöÇÏ¿© »ç¿ë°¡´É
-		// RuunnableÀº ÀÎÅÍÆäÀÌ½ºÀÌ°í ÀÍ¸íÅ¬·¡½º¸¦ °¡Áö°í ÀÖ´Â°Ç°¡?
+//		System.out.println("í­ìˆ˜");
+		// Runnable ì¸í„°í˜ì´ìŠ¤ëŠ” ê°ì²´ë¥¼ ë§Œë“¤ ìˆ˜ ì—†ì§€ë§Œ ìµëª…í´ë˜ìŠ¤ë¥¼ ë°”ë¡œ ë§Œë“¤ì–´ ì¶”ìƒë©”ì†Œë“œë¥¼ êµ¬í˜„í•˜ì—¬ ì‚¬ìš©ê°€ëŠ¥
+		// Ruunnableì€ ì¸í„°í˜ì´ìŠ¤ì´ê³  ìµëª…í´ë˜ìŠ¤ë¥¼ ê°€ì§€ê³  ìˆëŠ”ê±´ê°€?
 		Runnable runner = new Runnable() {
 
 			public void run() {
@@ -24,7 +24,7 @@ public class App {
 		Runnable runner2 = new Runnable() {
 
 			public void run() {
-				System.out.println("Çï·Î¿ì "+name );
+				System.out.println("í—¬ë¡œìš° "+name );
 			}
 		};
 		
@@ -33,17 +33,17 @@ public class App {
 //		activate(runner);
 //		activate(runner2);
 		
-		//¸Å°³º¯¼ö·Î ÀÎÅÍÆäÀÌ½º °´Ã¼°¡ ÀÔ·ÂÀÏ°æ¿ì ÀÍ¸íÅ¬·¡½º¸¦ ÀÌ¿ëÇØ ¹Ù·Î ÀÛ¼º°¡´É
+		//ë§¤ê°œë³€ìˆ˜ë¡œ ì¸í„°í˜ì´ìŠ¤ ê°ì²´ê°€ ì…ë ¥ì¼ê²½ìš° ìµëª…í´ë˜ìŠ¤ë¥¼ ì´ìš©í•´ ë°”ë¡œ ì‘ì„±ê°€ëŠ¥
 		activate(new Runnable() {
 			public void run() {
 				System.out.println(name);	
-				System.out.println("Çï·Î¿ì "+name );
+				System.out.println("í—¬ë¡œìš° "+name );
 			}
 		});
 	}
 	
 	public void activate(Runnable runnable) {
-		runnable.run(); // ÀÎÅÍÆäÀÌ½ºÀÇ Ãß»ó¸Ş¼Òµå ½ÇÇà
+		runnable.run(); // ì¸í„°í˜ì´ìŠ¤ì˜ ì¶”ìƒë©”ì†Œë“œ ì‹¤í–‰
 	}
 
 }

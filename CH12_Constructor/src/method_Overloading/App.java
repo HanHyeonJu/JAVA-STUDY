@@ -3,18 +3,18 @@ package method_Overloading;
 public class App {
 
 	public static void main(String[] args) {
-		//¸Ş¼Òµå ¿À¹ö·Îµù : ¸Ş¼ÒµåÀÇ ÀÌ¸§Àº °°Áö¸¸ ¸Å°³º¯¼ö°¡ ´Ù¸¥ °æ¿ì
+		//ë©”ì†Œë“œ ì˜¤ë²„ë¡œë”© : ë©”ì†Œë“œì˜ ì´ë¦„ì€ ê°™ì§€ë§Œ ë§¤ê°œë³€ìˆ˜ê°€ ë‹¤ë¥¸ ê²½ìš°
 		Person person = new Person();
 		
 		person.greet();
-		person.greet("Æë¼ö");
+		person.greet("í­ìˆ˜");
 		person.greet(190);
-		person.greet("¶óÀÌ¾ğ", 199);
+		person.greet("ë¼ì´ì–¸", 199);
 		
-		//¸Å°³º¯¼ö¿¡ µû¶ó¼­ ´Ù¸¥ ¸Ş¼Òµå·Î Á¤ÀÇµÊ
-		System.out.println("123"); //¹®ÀÚ¿­
-		System.out.println(123); // Á¤¼öÇü
-		System.out.println(1.23); // »ó¼öÇü
+		//ë§¤ê°œë³€ìˆ˜ì— ë”°ë¼ì„œ ë‹¤ë¥¸ ë©”ì†Œë“œë¡œ ì •ì˜ë¨
+		System.out.println("123"); //ë¬¸ìì—´
+		System.out.println(123); // ì •ìˆ˜í˜•
+		System.out.println(1.23); // ìƒìˆ˜í˜•
 	}
 
 }

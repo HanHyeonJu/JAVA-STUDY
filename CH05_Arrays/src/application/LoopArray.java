@@ -3,19 +3,19 @@ package application;
 public class LoopArray {
 
 	public static void main(String[] args) {
-		// ¹®ÀÚ¿­ Å¸ÀÔÀ¸·Î ¸¸µç ¹è¿­
+		// ë¬¸ìì—´ íƒ€ì…ìœ¼ë¡œ ë§Œë“  ë°°ì—´
 		
-		String[] animals = {"°í¾çÀÌ", "°³", "Æë±Ï", "»çÀÚ"};
+		String[] animals = {"ê³ ì–‘ì´", "ê°œ", "í­ê·„", "ì‚¬ì"};
 		
 //		System.out.println(animals[0]);
 //		System.out.println(animals[1]);
 //		System.out.println(animals[2]);
 //		System.out.println(animals[3]);
 		
-		// animals.length·Î ÇÏ¸é ¹è¿­¿¡ ¾Æ¹«¸® ´Ù¸¥ µ¥ÀÌÅÍ¸¦ Ãß°¡ÇØµµ Ãâ·Â °¡´É
+		// animals.lengthë¡œ í•˜ë©´ ë°°ì—´ì— ì•„ë¬´ë¦¬ ë‹¤ë¥¸ ë°ì´í„°ë¥¼ ì¶”ê°€í•´ë„ ì¶œë ¥ ê°€ëŠ¥
 		for(int i=0; i < 4; i++) {
 //			System.out.println(animals[i]);
-			System.out.printf("ÀÎµ¦½º %d¹øÀº %sÀÌ´Ù \n", i, animals[i]);
+			System.out.printf("ì¸ë±ìŠ¤ %dë²ˆì€ %sì´ë‹¤ \n", i, animals[i]);
 		}
 		
 		

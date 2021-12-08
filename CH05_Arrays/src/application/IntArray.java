@@ -3,20 +3,20 @@ package application;
 public class IntArray {
 
 	public static void main(String[] args) {
-		// ¹è¿­Àº °°Àº Å¸ÀÔÀÇ ¿©·¯ º¯¼ö¸¦ ÇÏ³ª·Î ¹­Àº ÀÚ·áÇü
-		int[] numbers = {2,4,6,8}; // Á¤¼ö intÇü ¹è¿­ ¼±¾ğ°ú ÃÊ±â°ªÀÌ {2,4,6,8}
+		// ë°°ì—´ì€ ê°™ì€ íƒ€ì…ì˜ ì—¬ëŸ¬ ë³€ìˆ˜ë¥¼ í•˜ë‚˜ë¡œ ë¬¶ì€ ìë£Œí˜•
+		int[] numbers = {2,4,6,8}; // ì •ìˆ˜ intí˜• ë°°ì—´ ì„ ì–¸ê³¼ ì´ˆê¸°ê°’ì´ {2,4,6,8}
 /*
-ÀÎµ¦½º: °ª
+ì¸ë±ìŠ¤: ê°’
 0   : 2
 1   : 4
 2   : 6
 3   : 8
 */							
 		
-		System.out.printf("ÀÎµ¦½º ¹øÈ£ %dÀÇ °ªÀº %d ÀÌ´Ù.\n",0, numbers[0]);
-		System.out.printf("ÀÎµ¦½º ¹øÈ£ %dÀÇ °ªÀº %d ÀÌ´Ù.\n",1, numbers[1]);
-		System.out.printf("ÀÎµ¦½º ¹øÈ£ %dÀÇ °ªÀº %d ÀÌ´Ù.\n",2, numbers[2]);
-		System.out.printf("ÀÎµ¦½º ¹øÈ£ %dÀÇ °ªÀº %d ÀÌ´Ù.\n",3, numbers[3]);
+		System.out.printf("ì¸ë±ìŠ¤ ë²ˆí˜¸ %dì˜ ê°’ì€ %d ì´ë‹¤.\n",0, numbers[0]);
+		System.out.printf("ì¸ë±ìŠ¤ ë²ˆí˜¸ %dì˜ ê°’ì€ %d ì´ë‹¤.\n",1, numbers[1]);
+		System.out.printf("ì¸ë±ìŠ¤ ë²ˆí˜¸ %dì˜ ê°’ì€ %d ì´ë‹¤.\n",2, numbers[2]);
+		System.out.printf("ì¸ë±ìŠ¤ ë²ˆí˜¸ %dì˜ ê°’ì€ %d ì´ë‹¤.\n",3, numbers[3]);
 		
 	}
 

@@ -3,18 +3,18 @@ package student;
 public class App {
 
 	public static void main(String[] args) {
-		// ºü¸¥ Å¬·¡½º »ı¼º¹æ¹ı 1. º¯¼ö 2. »ı¼ºÀÚ 3. °ÔÅÍ¼¼ÅÍ 4. toString
-		// 2~4¹ø±îÁö ÀÚµ¿¿Ï¼º(¿À¸¥ÂÊ ¸¶¿ì½º -> ¼Ò½º -> Á¦³Ê·¹ÀÌÆ®¾îÂ¼±ÃÀúÂ¼±Ã)
+		// ë¹ ë¥¸ í´ë˜ìŠ¤ ìƒì„±ë°©ë²• 1. ë³€ìˆ˜ 2. ìƒì„±ì 3. ê²Œí„°ì„¸í„° 4. toString
+		// 2~4ë²ˆê¹Œì§€ ìë™ì™„ì„±(ì˜¤ë¥¸ìª½ ë§ˆìš°ìŠ¤ -> ì†ŒìŠ¤ -> ì œë„ˆë ˆì´íŠ¸ì–´ì©Œê¶ì €ì©Œê¶)
 		
-		Student s1 = new Student("Æë¼ö",7);
-		Student s2 = new Student("±æµ¿",37);
-		Student s3 = new Student("¶óÀÌ¾ğ",17);
-		Student s4 = new Student("¿À¸®¿Â",27);
+		Student s1 = new Student("í­ìˆ˜",7);
+		Student s2 = new Student("ê¸¸ë™",37);
+		Student s3 = new Student("ë¼ì´ì–¸",17);
+		Student s4 = new Student("ì˜¤ë¦¬ì˜¨",27);
 		
-		s1.setIsVisible(false); // Æë¼ö´Â ¿ø°İ, ¿ÂµµÃøÁ¤ ¾ÈÇÔ
-		s2.setTemperature(35.5); // ±æµ¿Àº ÁıÃ¼, ¿Âµµ 35.5
-		s3.setTemperature(37.5); // ¶óÀÌ¾ğÀº ÁıÃ¼, ¿Âµµ 37.5
-		s4.setIsVisible(false); // ¿À¸®¿Âµµ ¿ø°İ
+		s1.setIsVisible(false); // í­ìˆ˜ëŠ” ì›ê²©, ì˜¨ë„ì¸¡ì • ì•ˆí•¨
+		s2.setTemperature(35.5); // ê¸¸ë™ì€ ì§‘ì²´, ì˜¨ë„ 35.5
+		s3.setTemperature(37.5); // ë¼ì´ì–¸ì€ ì§‘ì²´, ì˜¨ë„ 37.5
+		s4.setIsVisible(false); // ì˜¤ë¦¬ì˜¨ë„ ì›ê²©
 		
 		System.out.println(s1.toString());
 		System.out.println(s2.toString());

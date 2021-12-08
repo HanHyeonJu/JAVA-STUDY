@@ -1,9 +1,9 @@
 package application;
 
-public class App { // ÇÁ·ÎÁ§Æ®¸¦ ½ÇÇàÇÏ±â À§ÇÑ Å¬·¡½º
+public class App { // í”„ë¡œì íŠ¸ë¥¼ ì‹¤í–‰í•˜ê¸° ìœ„í•œ í´ë˜ìŠ¤
 
 	public static void main(String[] args) {
-		// Çà¸Ç °ÔÀÓ ½ÃÀÛ
+		// í–‰ë§¨ ê²Œì„ ì‹œì‘
 		Hangman game = new Hangman();
 		game.run();
 		game.close();

@@ -8,23 +8,23 @@ public class IfElseIfElse {
 		// TODO Auto-generated method stub
 		Scanner scanner =new Scanner(System.in); 
 		
-		System.out.print("»ç°úÀÇ °¹¼ö´Â?");
+		System.out.print("ì‚¬ê³¼ì˜ ê°¯ìˆ˜ëŠ”?");
 		int apple = scanner.nextInt();
 		
-		System.out.print("¹Ù³ª³ªÀÇ °¹¼ö´Â?");
+		System.out.print("ë°”ë‚˜ë‚˜ì˜ ê°¯ìˆ˜ëŠ”?");
 		int banana = scanner.nextInt();
-		scanner.close(); // ½ºÄ³³Ê¸¦ ´õ ÀÌ»ó ¾²Áö ¾ÊÀ» ¶§´Â Á¾·á ½ÃÄÑÁà¾ß ÇÔ
+		scanner.close(); // ìŠ¤ìºë„ˆë¥¼ ë” ì´ìƒ ì“°ì§€ ì•Šì„ ë•ŒëŠ” ì¢…ë£Œ ì‹œì¼œì¤˜ì•¼ í•¨
 		
 		if(apple > banana) {
-			System.out.println("»ç°ú°¡ ¹Ù³ª³ªº¸´Ù ¸¹À½");
+			System.out.println("ì‚¬ê³¼ê°€ ë°”ë‚˜ë‚˜ë³´ë‹¤ ë§ìŒ");
 		}
-		else if(apple < banana){ // ¶Ç ´Ù¸¥ Á¶°ÇÀº else if(Á¶°Ç)À» »ç¿ëÇÑ´Ù. (¿©·¯ °³ »ç¿ë°¡´É)
-			System.out.println("¹Ù³ª³ª°¡ »ç°úº¸´Ù ¸¹À½");
+		else if(apple < banana){ // ë˜ ë‹¤ë¥¸ ì¡°ê±´ì€ else if(ì¡°ê±´)ì„ ì‚¬ìš©í•œë‹¤. (ì—¬ëŸ¬ ê°œ ì‚¬ìš©ê°€ëŠ¥)
+			System.out.println("ë°”ë‚˜ë‚˜ê°€ ì‚¬ê³¼ë³´ë‹¤ ë§ìŒ");
 		}
-		else { // À§ÀÇ Á¶°ÇµéÀÌ ¾Æ´Ò °æ¿ì ½ÇÇà
-			System.out.println("¹Ù³ª³ª¿Í »ç°úÀÇ °³¼ö°¡ °°À½");
+		else { // ìœ„ì˜ ì¡°ê±´ë“¤ì´ ì•„ë‹ ê²½ìš° ì‹¤í–‰
+			System.out.println("ë°”ë‚˜ë‚˜ì™€ ì‚¬ê³¼ì˜ ê°œìˆ˜ê°€ ê°™ìŒ");
 		}
-		System.out.println("ÇÁ·Î±×·¥ Á¾·á.");
+		System.out.println("í”„ë¡œê·¸ë¨ ì¢…ë£Œ.");
 	}
 
 }

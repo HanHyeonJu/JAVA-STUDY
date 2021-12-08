@@ -3,10 +3,10 @@ package application;
 public class BooleanOr {
 
 	public static void main(String[] args) {
-		//or, A||B => µÑÁß¿¡ ÇÏ³ª¶óµµ ÂüÀÌ¸é Âü
-		boolean isRaining = false; // ºñ°¡ ¿À´Â°¡? 
-		boolean mightRain = true; // ºñ°¡ ¿Ã¼öµµ ÀÖ³ª? 	
-		boolean takeUmbrella = false; // ¿ì»êÀ» ¾²³ª? 
+		//or, A||B => ë‘˜ì¤‘ì— í•˜ë‚˜ë¼ë„ ì°¸ì´ë©´ ì°¸
+		boolean isRaining = false; // ë¹„ê°€ ì˜¤ëŠ”ê°€? 
+		boolean mightRain = true; // ë¹„ê°€ ì˜¬ìˆ˜ë„ ìˆë‚˜? 	
+		boolean takeUmbrella = false; // ìš°ì‚°ì„ ì“°ë‚˜? 
 		
 		takeUmbrella = isRaining || mightRain;
 		
