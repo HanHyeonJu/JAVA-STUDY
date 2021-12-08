@@ -19,7 +19,7 @@ public class App {
 		// text.txt에 위의 내용을 적기 (쓰기)
 		// Files 클래스에 스테틱 메서드 write(적을파일의 경로, 적을내용(byte타입))
 		Files.write(path, text.getBytes()); // . = static메서드? 컴퓨터는 글자를 고대로 받아들이지 못하기 때문에 바이트 단위로 바꿔서 작성
-		// 프로젝트를 refresh하면 써졌는지 확인 가능
+		// 프로젝트를 refresh하면 써졌는지 확인 가능(F5)
 
 		//읽기
 		String recivedText = Files.readString(path);
