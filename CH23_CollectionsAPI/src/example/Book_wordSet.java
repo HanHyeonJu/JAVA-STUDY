@@ -17,8 +17,8 @@ public class Book_wordSet {
 		File gatsby = new File("gatsby.txt"); // 위치 : C:\JAVA\JAVA-STUDY\CH23_CollectionsAPI\gatsby.txt 
 		System.out.println(gatsby.exists()); // 파일이 존재하는지 확인
 		
-		// loadwords?
-		TreeSet<String> glist = loadWords(gatsby);
+		
+		TreeSet<String> glist = loadWords(gatsby); // TreeSet glist의 객체가 따로 없으므로 wordSet의 객체인 new TreeSet<>()이 glist의 객체가 됨
 		
 		System.out.println(glist.size()); // 중복단어를 제외하고 단어의 갯수
 		
@@ -40,7 +40,7 @@ public class Book_wordSet {
 			//한 줄 읽기
 			while((line = reader.readLine()) != null) {// 파일의 끝에 더이상 문자가 없으면 null
 				String[] words = line.split("[^a-zA-Z]+");
-				//TreeSet 단어로 분리해서 입력(자동 정렬(?) 및 중복제거)
+				//TreeSet 단어로 분리해서 입력(자동 정렬 및 중복제거), 문자열이 클래스객체가 아니기 때문에 compareTo가 되어있어서 자동정렬 가능
 				for(String w : words) {
 					if(w.length() < 6) { // 단어가 너무 많으므로 5자 이하면 그냥 넘기기
 						continue;
