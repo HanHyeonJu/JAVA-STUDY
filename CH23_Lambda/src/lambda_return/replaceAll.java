@@ -2,7 +2,6 @@ package lambda_return;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.function.UnaryOperator;
 
 public class replaceAll {
 
