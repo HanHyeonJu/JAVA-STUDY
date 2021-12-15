@@ -23,7 +23,7 @@ public class App {
 			} 
 		});
 		System.out.println();
-		// 익명 클래스 => 람다식
+		//  Consumer인터페이스를 람다식으로 표현
 		list.forEach(t->{
 			System.out.print(t);
 			System.out.print(" ");
