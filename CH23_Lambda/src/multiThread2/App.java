@@ -17,7 +17,7 @@ public class App {
 	t1.start(); 
 	t2.start();
 		
-	System.out.println("value : "+ value); // 메인 쓰레드 실행
+	System.out.println("value : "+ value); // 메인 쓰레드
 		
 	t1.join(); // 메인쓰레드가 t1을 실행할때까지 대기
 	t2.join(); // 메인쓰레드가 t2를 실행할때까지 대기

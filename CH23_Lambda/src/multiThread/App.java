@@ -25,7 +25,7 @@ public class App {
 		t1.start(); // t1 실행
 		t2.start(); // t2 실행
 		
-		System.out.println("헬로우!"); //메인쓰레드가 가장 먼저 실행된다.
+		System.out.println("헬로우!"); //메인쓰레드가 가장 먼저 실행된다.(대체적으로 먼저 실행될 뿐 무조건은 아님)
 	}
 
 }

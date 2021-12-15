@@ -22,9 +22,7 @@ public class App {
 	t1.start(); 
 	t2.start();
 	t3.start();
-	
-//	System.out.println("value : "+ value); ??
-			
+		
 	t1.join(); 
 	t2.join(); 
 	t3.join(); 
