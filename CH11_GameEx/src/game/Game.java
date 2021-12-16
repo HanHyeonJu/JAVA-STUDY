@@ -52,7 +52,7 @@ public class Game {
 		}else if (wins < 0) {
 			System.out.println("당신의 패배('∇^*)");
 		}else {
-			System.out.println("비겼습니다๏_๏");
+			System.out.println("비겼습니다ㅡㅡ");
 		}
 	}	
 }
