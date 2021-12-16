@@ -46,11 +46,13 @@ public class Toolbar extends JToolBar{
 		redButton.addActionListener(e -> mainPanel.setBackground(Color.RED));
 		
 		// 익명클래스
-		blueButton.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				mainPanel.setBackground(Color.BLUE);
-			}
-		});
+//		blueButton.addActionListener(new ActionListener() {
+//			public void actionPerformed(ActionEvent e) {
+//				mainPanel.setBackground(Color.BLUE);
+//			}
+//		});
+		//람다식으로 변경 
+		blueButton.addActionListener(e -> mainPanel.setBackground(Color.BLUE));
 		
 		// 툴바에 버튼을 붙임
 		add(redButton);

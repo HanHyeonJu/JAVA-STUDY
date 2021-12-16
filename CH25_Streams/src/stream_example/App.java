@@ -17,7 +17,7 @@ public class App {
 		numbers.stream().forEach(System.out::println);
 		System.out.println();
 		numbers.stream()
-			.filter(n -> n > 5) // stream().filter는 참일 때 출력
+			.filter(n -> n > 5) // stream().filter는 removeif와는 반대로 참일 때 출력
 			.map(n -> n * n)
 			.forEach(System.out::println); // 사실상 forEach는 굳이 stream안 써줘도 됨
 	}
