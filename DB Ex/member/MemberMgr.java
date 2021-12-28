@@ -7,54 +7,211 @@ import java.util.Vector;
 
 public class MemberMgr {
 	private DBConnectionMgr pool;
-	
+
 	public MemberMgr() {
 		try {
 			pool = DBConnectionMgr.getInstance();
 			Connection con = pool.getConnection();
-//			System.out.println("¼º°ø");
-		}catch(Exception e) {
-			System.err.println("½ÇÆĞ");
+//			System.out.println("ì„±ê³µ");
+		} catch (Exception e) {
+			System.err.println("ì‹¤íŒ¨");
 			e.printStackTrace();
 		}
 	}// MemberMgr
-	
-	//¿ìÆí¹øÈ£ °Ë»ö, Á¦³×¸¯ : Vector¿¡¼­ ÀúÀåÇÏ´Â Å¸ÀÔÀÇ ÁöÁ¤
-	public Vector<ZipcodeBean> zipcodeRead(String area3){
-		//DB¿¬µ¿¿¡ ÇÊ¿äÇÑ º¯¼ö ¼±¾ğ
-		//DB¿¬µ¿Àº °ø½ÄÀÌ ÀÖ´Ù.
-		//java.sql ÆĞÅ°Áö Å¬·¡½º
+
+	// ìš°í¸ë²ˆí˜¸ ê²€ìƒ‰, ì œë„¤ë¦­ : Vectorì—ì„œ ì €ì¥í•˜ëŠ” íƒ€ì…ì˜ ì§€ì •
+	public Vector<ZipcodeBean> zipcodeRead(String area3) {
+		// DBì—°ë™ì— í•„ìš”í•œ ë³€ìˆ˜ ì„ ì–¸
+		// DBì—°ë™ì€ ê³µì‹ì´ ìˆë‹¤.
+		// java.sql íŒ¨í‚¤ì§€ í´ë˜ìŠ¤
 		Connection con = null;
 		PreparedStatement pstmt = null;
-		ResultSet rs = null;
+		ResultSet rs = null; // select í•„ìš”
 		String sql = null;
 		Vector<ZipcodeBean> vlist = new Vector<ZipcodeBean>();
 		try {
-			//DB¿¬°á °´Ã¼
-			//ÇÊ¿äÇÑ °÷¿¡ ºô·ÁÁÖ°í ¹İ³³¹Ş´Â ±â¹ı : Ç®¸µ±â¹ı
-			con = pool.getConnection(); // ºô·Á¿È(pool ±â¹ı)
-			sql = "SELECT * FROM tblzipcode WHERE AREA3 LIKE ?"; // like '%°­³²´ë·Î%'
-			//sql¹®À» ¸Å°³º¯¼ö·Î pstmt °´Ã¼¸¦ ¸®ÅÏ
+			// DBì—°ê²° ê°ì²´
+			// í•„ìš”í•œ ê³³ì— ë¹Œë ¤ì£¼ê³  ë°˜ë‚©ë°›ëŠ” ê¸°ë²• : í’€ë§ê¸°ë²•
+			con = pool.getConnection(); // ë¹Œë ¤ì˜´(pool ê¸°ë²•)
+			sql = "SELECT * FROM tblzipcode WHERE AREA3 LIKE ?"; // like '%ê°•ë‚¨ëŒ€ë¡œ%'
+			// sqlë¬¸ì„ ë§¤ê°œë³€ìˆ˜ë¡œ pstmt ê°ì²´ë¥¼ ë¦¬í„´
 			pstmt = con.prepareStatement(sql);
-			pstmt.setString(1, "%"+ area3 +"%"); // 1ÀÌ sql¹®¿¡ ? ¼ø¼­¸¦ ¶æÇÔ
-			rs = pstmt.executeQuery(); // ½ÇÁ¦ sql¹® ½ÇÇà
-			while(rs.next()) {
-				String str = rs.getString(1) + "\t";
-				str+=rs.getString(2) + "\t";
-				str+=rs.getString(3) + "\t";
-				str+=rs.getString(4);
-				System.out.println(str);
+			pstmt.setString(1, "%" + area3 + "%"); // 1ì´ sqlë¬¸ì— ? ìˆœì„œë¥¼ ëœ»í•¨
+			rs = pstmt.executeQuery(); // ì‹¤ì œ sqlë¬¸ ì‹¤í–‰
+			while (rs.next()) {
+				ZipcodeBean bean = new ZipcodeBean();
+				bean.setZipcode(rs.getString("zipcode"));
+				bean.setArea1(rs.getString("area1"));
+				bean.setArea2(rs.getString("area2"));
+				bean.setArea3(rs.getString("area3").trim());
+				vlist.addElement(bean);
 			}
-		}catch(Exception e) {
+		} catch (Exception e) {
 			e.printStackTrace();
-		}finally {
-			pool.freeConnection(con,pstmt,rs);
+		} finally {
+			pool.freeConnection(con, pstmt, rs);
 		}
 		return vlist;
 	}
+
+	// ê°€ì…
+	public boolean insert(MemberBean bean) {
+		Connection con = null;
+		PreparedStatement pstmt = null;
+		String sql = null;
+		boolean flag = false; // ì»´í“¨í„° ìš©ì–´ì—ì„œ flagëŠ” ì œì–´ê¶Œì„ ì˜ë¯¸
+		try {
+			con = pool.getConnection(); // poolì—ì„œ Connection ë¹Œë ¤ì˜´
+			sql = "insert tblMember(name,phone,team,address)values(?,?,?,?)";
+			pstmt = con.prepareStatement(sql);
+			// ? ì„¸íŒ…
+			pstmt.setString(1, bean.getName()); // ì²«ë²ˆì§¸ ?ì— 'í™ê¸¸ë™'ì„¸íŒ…
+			pstmt.setString(2, bean.getPhone());
+			pstmt.setString(3, bean.getTeam());
+			pstmt.setString(4, bean.getAddress());
+			// ì‹¤í–‰
+			int cnt = pstmt.executeUpdate(); // ë¦¬í„´ê°’ì€ ì ìš©ëœ ë ˆì½”ë“œ ê°¯ìˆ˜ -> ì„±ê³µ : 1, ì‹¤íŒ¨ :0
+			if (cnt == 1)
+				flag = true;
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			pool.freeConnection(con, pstmt);
+		}
+		return flag;
+	}
 	
-	public static void main(String[] args){
-		MemberMgr mgr= new MemberMgr();
-		mgr.zipcodeRead("°­³²´ë·Î");
+	//team list
+	public Vector<String> listTeam(){
+		Connection con = null;
+		PreparedStatement pstmt = null;
+		ResultSet rs = null; // select í•„ìš”
+		String sql = null;
+		Vector<String> vlist = new Vector<String>();
+		try {
+			con = pool.getConnection();
+			sql = "select distinct team from tblMember"; // like '%ê°•ë‚¨ëŒ€ë¡œ%'
+			// sqlë¬¸ì„ ë§¤ê°œë³€ìˆ˜ë¡œ pstmt ê°ì²´ë¥¼ ë¦¬í„´
+			pstmt = con.prepareStatement(sql);
+			rs = pstmt.executeQuery(); // ì‹¤ì œ sqlë¬¸ ì‹¤í–‰
+			while (rs.next()) {
+				vlist.addElement(rs.getString(1));
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			pool.freeConnection(con, pstmt, rs);
+		}
+		return vlist;
+	}
+
+	public static void main(String[] args) {
+		MemberMgr mgr = new MemberMgr();
+		MemberBean bean = new MemberBean(0, "í™ê¸¸ë™", "010-6666-9999", "ë¶€ì‚°ì‹œ", "ì‚°ì ");
+		System.out.println(mgr.insert(bean));
+	}
+
+	// ë¦¬ìŠ¤íŠ¸
+	public Vector<MemberBean> list() {
+		Connection con = null;
+		PreparedStatement pstmt = null;
+		ResultSet rs = null; // select í•„ìš”
+		String sql = null;
+		Vector<MemberBean> vlist = new Vector<MemberBean>();
+		try {
+			con = pool.getConnection();
+			sql = "SELECT * FROM tblMember";
+			pstmt = con.prepareStatement(sql);
+			rs = pstmt.executeQuery(); // ì‹¤í–‰
+			while (rs.next()) {
+				MemberBean bean = new MemberBean(rs.getInt("id"), rs.getString("name"), rs.getString("phone"),
+						rs.getString("team"), rs.getString("address"));
+				vlist.addElement(bean);
+			}
+		} catch (Exception e) {
+			pool.freeConnection(con, pstmt, rs);
+		}
+		return vlist;
+	}
+
+	// í•œ ëª…ì˜ ë ˆì½”ë“œ(íšŒì›ì •ë³´)
+	public MemberBean select(int id) {
+		Connection con = null;
+		PreparedStatement pstmt = null;
+		ResultSet rs = null; // select í•„ìš”
+		String sql = null;
+		MemberBean bean = new MemberBean();
+		try {
+			con = pool.getConnection();
+			sql = "SELECT * FROM tblMember where id = ?";
+			pstmt = con.prepareStatement(sql);
+			pstmt.setInt(1, id); // ex > id = 3;
+			rs = pstmt.executeQuery(); // ì‹¤í–‰
+			if (rs.next()) {
+				bean.setId(id);
+				bean.setName(rs.getString("name"));
+				bean.setPhone(rs.getString("phone"));
+				bean.setTeam(rs.getString("team"));
+				bean.setAddress(rs.getString("address").trim());
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			pool.freeConnection(con, pstmt, rs);
+		}
+		return bean;
+	}
+
+	// ìˆ˜ì •
+	public boolean update(MemberBean bean) {
+		Connection con = null;
+		PreparedStatement pstmt = null;
+		String sql = null;
+		boolean flag = false; // ì»´í“¨í„° ìš©ì–´ì—ì„œ flagëŠ” ì œì–´ê¶Œì„ ì˜ë¯¸
+		try {
+			con = pool.getConnection(); // poolì—ì„œ Connection ë¹Œë ¤ì˜´
+			sql = "update tblMember set name =?, phone = ?, team = ?, address = ? where id =?";
+			pstmt = con.prepareStatement(sql);
+			
+			pstmt.setString(1, bean.getName()); 
+			pstmt.setString(2, bean.getPhone());
+			pstmt.setString(3, bean.getTeam());
+			pstmt.setString(4, bean.getAddress());
+			pstmt.setInt(5, bean.getId());
+
+			// ì‹¤í–‰
+			int cnt = pstmt.executeUpdate(); // ë¦¬í„´ê°’ì€ ì ìš©ëœ ë ˆì½”ë“œ ê°¯ìˆ˜ -> ì„±ê³µ : 1, ì‹¤íŒ¨ :0
+			if (cnt == 1)
+				flag = true;
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			pool.freeConnection(con, pstmt);
+		}
+		return flag;
+	}
+
+	// ì‚­ì œ
+	public boolean delete(int id) {
+		Connection con = null;
+		PreparedStatement pstmt = null;
+		String sql = null;
+		boolean flag = false;
+		try {
+			con = pool.getConnection();
+			sql = "delete from tblMember where id = ?";
+			pstmt = con.prepareStatement(sql);
+			pstmt.setInt(1, id);
+
+			// ì‹¤í–‰
+			int cnt = pstmt.executeUpdate(); // ë¦¬í„´ê°’ì€ ì ìš©ëœ ë ˆì½”ë“œ ê°¯ìˆ˜ -> ì„±ê³µ : 1, ì‹¤íŒ¨ :0
+			if (cnt == 1)
+				flag = true;
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			pool.freeConnection(con, pstmt);
+		}
+		return flag;
 	}
 }

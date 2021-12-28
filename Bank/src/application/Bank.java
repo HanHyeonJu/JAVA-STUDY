@@ -180,6 +180,14 @@ public class Bank {
 			case "5":
 				accounts();
 			case "6":
+				System.out.println("입금 할 계좌번호 > ");
+				String anum = scanner.nextLine();
+				System.out.println("계좌 비밀번호 > ");
+				String apassword = scanner.nextLine();
+				if(AAccess(anum,apassword)) {
+					System.out.println("입금할 금액을 입력하세요 > ");
+					int pmoney = Integer.parseInt(scanner.nextLine());
+				}
 			case "7":
 			case "8":
 				if(out != -1) {

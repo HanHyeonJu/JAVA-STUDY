@@ -1,16 +1,16 @@
 package member;
 
-//ºóÁî´Â Å×ÀÌºí¿¡ ·¹ÄÚµå ´ÜÀ§¿¡ °ªÀ» ÀúÀåÇÏ´Â °´Ã¼ µ¢¾î¸®, ÄÃ·³ ´ÜÀ§¿¡ °ªÀ» ³Ö°í °¡Á®°¡°í ÇÏ´Â ±â´É
-//ºóÁîÅ¬·¡½º¸í : 1. Å×ÀÌºí + Bean => ZipcodeBean
+//ë¹ˆì¦ˆëŠ” í…Œì´ë¸”ì— ë ˆì½”ë“œ ë‹¨ìœ„ì— ê°’ì„ ì €ì¥í•˜ëŠ” ê°ì²´ ë©ì–´ë¦¬, ì»¬ëŸ¼ ë‹¨ìœ„ì— ê°’ì„ ë„£ê³  ê°€ì ¸ê°€ê³  í•˜ëŠ” ê¸°ëŠ¥
+//ë¹ˆì¦ˆí´ë˜ìŠ¤ëª… : 1. í…Œì´ë¸” + Bean => ZipcodeBean
 public class ZipcodeBean {
 	
-	//2. private µ¥ÀÌÅÍÅ¸ÀÔ ÄÃ·³¸í
+	//2. private ë°ì´í„°íƒ€ì… ì»¬ëŸ¼ëª…
 	private String zipcode;
 	private String area1;
 	private String area2;
 	private String area3;
 	
-	//3. getter, setter ¼±¾ğ(get.zipcode, set.zipcode)
+	//3. getter, setter ì„ ì–¸(get.zipcode, set.zipcode)
 	public String getZipcode() {
 		return zipcode;
 	}
