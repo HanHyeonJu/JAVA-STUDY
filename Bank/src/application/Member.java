@@ -31,7 +31,7 @@ public class Member {
 		
 	            }
 	
-	
+	// private 변수 접근을 위해 get, set메소드 생성
 	public String getName() {
 		return name;
 	}
