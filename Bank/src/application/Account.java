@@ -10,16 +10,16 @@ public class Account {
 		
 	}
 	
-	public Account(String anum, String apassword, int money) {
+	public Account(String anum, String apassword) {
 
 		this.anum = anum;
 		anum = null;
 		this.apassword = apassword;
 		apassword = null;
-		this.money = money;
+		
 	}
 	
-	public boolean correct(String anum, String apassword) { // 계좌번호와 계좌 비밀번호 모두가 맞을 경우 true 아닐 경우 false를 return할 메소드
+	public boolean correct(String anum, String apassword) { // 계좌번호와 계좌 비밀번호 모두가 맞을 경우 true 아닐 경우 false를 return할 메소드 필요
 		boolean cvalue = false;
 		if(anum.equals(anum) && apassword.equals(apassword)) {
 			cvalue = true;
@@ -27,16 +27,19 @@ public class Account {
 		return cvalue;
 	}
 	
-	public void accountdisplay() { // 입출금 후에 정보를 고객에게 보여주기 위한 메소드
+	// 입출금 후에 정보를 고객에게 보여주기 위한 메소드
+	public void accountdisplay() { 
 		System.out.println("계좌번호 : " + anum);
 		System.out.println("잔액 : " + money);
 	}
-			
-	public void plus(int Pmoney){ // 입금 메소드
+	
+	// 입금 메소드	
+	public void plus(int Pmoney){ 
 		money += Pmoney;
 	}
 	
-	public void minus(int Mmoney){ // 출금 메소드
+	// 출금 메소드
+	public void minus(int Mmoney){
 		money -= Mmoney;
 	}
 	
