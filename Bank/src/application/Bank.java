@@ -3,14 +3,14 @@ package application;
 import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-
+// 은행 클래스
 public class Bank {
-	private String bankname;
-	private Account account[] = new Account[50];
-	private Member member[] = new Member[10];
-	private int accountcount = 0;
-	private int membercount = 0;
-	private int out = -1;
+	private String bankname; //현재 은행의 이름
+	private Account account[] = new Account[50]; // 계좌의 정보를 담을 배열생성
+	private Member member[] = new Member[10]; // 회원의 정보를 담을 배열 생성
+	private int accountcount = 0; // 계좌의 정보를 저장할 공간 
+	private int membercount = 0; // 회원의 정보를 저장할 공간
+	private int out = -1; // 로그인과 로그아웃을 확인하기 위한 변수
 	private Scanner scanner = new Scanner(System.in);
 
 	public Bank() {
@@ -21,14 +21,15 @@ public class Bank {
 		this.bankname = bankname;
 	}
 
-	public void members() {
+	public void members() { // 회원가입을 위한 메소드(간단한 id, 비밀번호 생성만을 위함)
 		System.out.println("고객님의 성함을 입력해주세요");
 		String name = scanner.nextLine();
 		System.out.println("고객님이 원하시는 아이디를 입력해주세요");
 		System.out.println("ID 형식 : 영문자와 숫자 조합으로 아이디를 생성해주세요(6~20자리 허용)");
 		String id = scanner.nextLine();
-
-		Pattern idPattern = Pattern.compile("^[a-zA-Z]\\w{5,19}$");
+		
+		// ID를 영문자와 숫자 조합으로 만들기 위해 정규표현식 Pattern과 Matcher 사용
+		Pattern idPattern = Pattern.compile("^[a-zA-Z]\\w{5,19}$"); 
 		Matcher idMatcher = idPattern.matcher(id);
 
 		if (!idMatcher.matches()) {
@@ -116,15 +117,14 @@ public class Bank {
 		return accvalue;
 	}
 
-	public boolean AAccess(String anum, String apassword) {
-		boolean aaccvalue = false;
+	public Account Access2(String anum, String apassword) {
+		
 		for (int i = 0; i < accountcount; i++) {
 			if (account[i].correct(anum, apassword)) {
-				aaccvalue = true;
-				break;
+				return account[i];
 			}
 		}
-		return aaccvalue;
+		return null;
 	}
 	
 	
@@ -133,18 +133,26 @@ public class Bank {
 		System.out.println("현재 가입된 고객의 수 : " + membercount);
 	}
 
-	public void Adisplay() {
+	public void Mdisplay() {
 		System.out.println("회원정보");
 
 		for (int i = 0; i < membercount; i++) {
-			member[i].display();
+			member[i].memberdisplay();
 		}
 
 		System.out.println("보유하고 있는 계좌의 갯수 : " + accountcount);
 
 		for (int i = 0; i < accountcount; i++) {
-			account[i].Adisplay();
+			account[i].accountdisplay();
 		}	
+	}
+	
+	public void Adisplay() {
+		System.out.println("입출금 정보");
+
+		for (int i = 0; i < accountcount; i++) {
+			account[i].accountdisplay();
+		}
 	}
 
 	public void menu() {
@@ -153,7 +161,7 @@ public class Bank {
 
 		while (running) {
 			System.out.println("반갑습니다 고객님 원하시는 메뉴를 선택해주세요");
-			System.out.println("1. 계정등록 2.은행정보 3.로그인(회원정보조회) 4.로그아웃 5.계좌개설 6.입금 7.출금 8.회원탈퇴 9.종료");
+			System.out.println("1. 회원가입 2.은행정보 3.로그인(회원정보조회) 4.로그아웃 5.계좌개설 6.입금 7.출금 8.회원탈퇴 9.종료");
 			choice = scanner.nextLine();
 			switch (choice) {
 			case "1":
@@ -172,23 +180,54 @@ public class Bank {
 				} else {
 					System.out.println("잘못된 아이디나 비밀번호를 입력하셨습니다");
 				}
-				Adisplay();
+				Mdisplay();
 				break;
 			case "4":
 				logout();
 				break;
 			case "5":
 				accounts();
+				break;
 			case "6":
 				System.out.println("입금 할 계좌번호 > ");
+				System.out.print("111 - ");
 				String anum = scanner.nextLine();
 				System.out.println("계좌 비밀번호 > ");
 				String apassword = scanner.nextLine();
-				if(AAccess(anum,apassword)) {
+				Account account = Access2(anum,apassword);
+				if(account != null) {
 					System.out.println("입금할 금액을 입력하세요 > ");
-					int pmoney = Integer.parseInt(scanner.nextLine());
+					int Pmoney = Integer.parseInt(scanner.nextLine());
+					
+					//int Rmoney = 0;
+					//Rmoney = account.getMoney();
+					account.plus(Pmoney);
+				}else {
+					System.out.println("잘못된 입력입니다");
 				}
+				Adisplay();
+				break;
 			case "7":
+				System.out.println("출금 할 계좌번호 > ");
+				System.out.print("111 - ");
+				anum = scanner.nextLine();
+				System.out.println("계좌 비밀번호 > ");
+				apassword = scanner.nextLine();
+				account = Access2(anum,apassword);
+				if(account != null) {
+					System.out.println("출금할 금액을 입력하세요 > ");
+					int Mmoney = Integer.parseInt(scanner.nextLine());
+					int Rmoney = 0;
+					Rmoney = account.getMoney();
+					
+					if(Mmoney > Rmoney) {
+						System.out.println("잔액이 부족합니다");
+					}else {
+						account.minus(Rmoney);
+					}
+				}
+				Adisplay();
+				break;
 			case "8":
 				if(out != -1) {
 					System.out.println("비밀번호를 입력하세요");
