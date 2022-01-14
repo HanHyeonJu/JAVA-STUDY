@@ -21,7 +21,7 @@ public class Account {
 	
 	public boolean correct(String anum, String apassword) { // 계좌번호와 계좌 비밀번호 모두가 맞을 경우 true 아닐 경우 false를 return할 메소드 필요
 		boolean cvalue = false;
-		if(anum.equals(anum) && apassword.equals(apassword)) {
+		if(this.anum.equals(anum) && this.apassword.equals(apassword)) {
 			cvalue = true;
 		}
 		return cvalue;

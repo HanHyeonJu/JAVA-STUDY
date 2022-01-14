@@ -1,4 +1,7 @@
 package application;
+
+import java.util.Objects;
+
 //회원 클래스
 public class Member {
 
@@ -18,18 +21,17 @@ public class Member {
 	
 	public boolean success(String id, String password) { // 아이디와 비밀번호 모두가 맞을 경우 true 아닐 경우 false를 return할 메소드 필요
 		boolean value = false;
-		if(id.equals(id) && password.equals(password)) {
+		if(this.id.equals(id) && this.password.equals(password)) {
 			value = true;
 		}
 		return value;
 	}
 	
 	// 로그인 후에 고객의 정보를 볼 수 있도록 보여주는 메소드
-	public void memberdisplay() { 
+	public void memberdisplay() {
 		System.out.println("ID : " + id);
-		System.out.println("성함 : "+ name);
-		
-	            }
+		System.out.println("성함 : " + name);
+	}
 	
 	// private 변수 접근을 위해 get, set메소드 생성
 	public String getName() {
@@ -55,5 +57,7 @@ public class Member {
 	public void setPassword(String password) {
 		this.password = password;
 	}
+
+
 
 }
