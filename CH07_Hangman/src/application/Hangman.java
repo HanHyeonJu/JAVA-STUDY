@@ -32,7 +32,7 @@ public class Hangman {
 		System.out.print("한 문자 입력 : ");
 		String guess = scanner.nextLine(); // 입력받은 문자열을 guess에 저장
 		// 단어에서 입력받은 문자가 있는지 확인해서 처리한다.(단어는 RandomWord 객체 word를 사용)
-		word.addGuess(guess.charAt(0)); //첫번째 문자를 입력
+		word.addGuess(guess.charAt(0)); //첫번째 문자를 입력 charAt(0) = 0번째 문자를 char로 바꿔줌
 		
 	}
 
